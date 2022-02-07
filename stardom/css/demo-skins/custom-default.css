@@ -1,0 +1,11 @@
+/*----------------------------------------------
+ * This file is an alternate theme created using
+ * the themes included customization tool. This
+ * stylesheet is used only in "skin-demo.html"
+ * and is for demonstrative purposes only.
+-----------------------------------------------*/
+.header-btns > div > button:focus {
+  color: #666; }
+
+/* Place custom styles below this line 
+---------------------------------------*/

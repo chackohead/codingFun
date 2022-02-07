@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<title>Stardom - A Responsive HTML5 Admin UI Template Theme</title>
+<meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme" />
+<meta name="description" content="Stardom - A Responsive HTML5 Admin UI Template Theme">
+<meta name="author" content="Holladay">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font CSS  -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+
+<!-- Core CSS  -->
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/glyphicons_pro/glyphicons.min.css">
+
+<!-- Plugin CSS -->
+<link rel="stylesheet" type="text/css" href="vendor/plugins/mfpopup/dist/magnific-popup.css" media="screen" />
+<link rel="stylesheet" href="vendor/plugins/dropzone/downloads/css/dropzone.css">
+<link rel="stylesheet" href="vendor/plugins/jqueryupload/plugins/blueimp/css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="vendor/plugins/jqueryupload/css/jquery.fileupload.css">
+<link rel="stylesheet" href="vendor/plugins/jqueryupload/css/jquery.fileupload-ui.css">
+
+<!-- No Script CSS -->
+<noscript><link rel="stylesheet" href="vendor/plugins/jqueryupload/css/jquery.fileupload-noscript.css"></noscript>
+<noscript><link rel="stylesheet" href="vendor/plugins/jqueryupload/css/jquery.fileupload-ui-noscript.css"></noscript>
+
+<!-- Theme CSS -->
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/pages.css">
+<link rel="stylesheet" type="text/css" href="css/plugins.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- Boxed-Layout CSS -->
+<link rel="stylesheet" type="text/css" href="css/boxed.css">
+
+<!-- Demonstration CSS -->
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+
+<!-- Your Custom CSS -->
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="upload-tools-page"> 
+
+<!-- Start: Header -->
+<header class="navbar navbar-fixed-top">
+  <div class="pull-left"> <a class="navbar-brand" href="dashboard.html">
+    <div class="navbar-logo"><img src="img/logos/logo-red.png" class="img-responsive" alt="logo"/></div>
+    </a> </div>
+  <div class="pull-right header-btns">
+    <div class="messages-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-comment"></span> <b>4</b> </button>
+      <ul class="dropdown-menu checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Recent Messages <span class="pull-right glyphicons glyphicons-comment"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/2.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Maggie</b> - <small class="text-muted">12 minutes ago</small><br />
+                Great work Yesterday!</div>
+            </li>
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/3.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Robert</b> - <small class="text-muted">3 hours ago</small><br />
+                Is the Titan Project still on?</div>
+            </li>
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/1.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Cynthia</b> - <small class="text-muted">14 hours ago</small><br />
+                Don't forget about the staff meeting tomorrow</div>
+            </li>
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/4.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Matt</b> - <small class="text-muted">2 days ago</small><br />
+                Thor Project cancelled, Sorry.</div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-footer"><a href="#">View All Messages <i class="fa fa-caret-right"></i> </a></li>
+      </ul>
+    </div>
+    <div class="alerts-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicons glyphicons-bell"></span> <b>3</b> </button>
+      <ul class="dropdown-menu checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Recent Alerts <span class="pull-right glyphicons glyphicons-bell"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-icon"><i style="color: #0066ad;" class="fa fa-facebook"></i> </div>
+              <div class="item-message"><a href="#">Facebook likes reached <b>8,200</b></a></div>
+            </li>
+            <li>
+              <div class="item-icon"><i style="color: #5cb85c;" class="fa fa-check"></i> </div>
+              <div class="item-message"><a href="#">Robert <b>completed task</b> - Client SEO Revamp</a></div>
+            </li>
+            <li>
+              <div class="item-icon"><i style="color: #f0ad4e" class="fa fa-user"></i> </div>
+              <div class="item-message"><a href="#"><b>Marko</b> logged 12 hours</a></div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-footer"><a href="#">View All Alerts <i class="fa fa-caret-right"></i> </a></li>
+      </ul>
+    </div>
+    <div class="tasks-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicons glyphicons-tag"></span> <b>7</b> </button>
+      <ul class="dropdown-menu dropdown-checklist checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Recent Tasks <span class="pull-right glyphicons glyphicons-tag"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-icon"><i class="fa fa-pencil"></i> </div>
+              <div class="item-message text-slash"><a>Try Clicking me!</a></div>
+              <div class="item-label"><span class="label label-danger">Urgent</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-phone"></i> </div>
+              <div class="item-message text-slash"><a>Contact Client and request Approval</a></div>
+              <div class="item-label"><span class="label label-info">Normal</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-flask"></i> </div>
+              <div class="item-message text-slash"><a>Find new Python Developer </a></div>
+              <div class="item-label"><span class="label label-success">Completed</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-facebook"></i> </div>
+              <div class="item-message text-slash"><a>Update Facebook Page with Halloween Pictures</a></div>
+              <div class="item-label"><span class="label label-primary">In Progress</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-group"></i> </div>
+              <div class="item-message text-slash"><a>Organize next Staff Meeting</a></div>
+              <div class="item-label"><span class="label label-success">Completed</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-plane"></i> </div>
+              <div class="item-message text-slash"><a>Interview new applicant</a></div>
+              <div class="item-label"><span class="label label-warning">Moderate</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-footer"><a href="#">View All Tasks <i class="fa fa-caret-right"></i> </a></li>
+      </ul>
+    </div>
+    <div class="btn-group user-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicons glyphicons-user"></span> <b>Holladay</b> </button>
+      <button type="button" class="btn btn-default btn-gradient btn-sm dropdown-toggle padding-none" data-toggle="dropdown"> <img src="img/avatars/header/header-login.png" alt="user avatar" width="28" height="28" /> </button>
+      <ul class="dropdown-menu checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Your Account <span class="pull-right glyphicons glyphicons-user"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-icon"><i class="fa fa-envelope-o"></i> </div>
+              <a class="item-message" href="messages.html">Messages</a> </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-calendar"></i> </div>
+              <a class="item-message" href="calendar.html">Calendar</a> </li>
+            <li class="border-bottom-none">
+              <div class="item-icon"><i class="fa fa-cog"></i> </div>
+              <a class="item-message" href="customizer.html">Settings</a> </li>
+            <li class="padding-none">
+              <div class="dropdown-lockout"><i class="fa fa-lock"></i> <a href="screen-lock.html">Screen Lock</a></div>
+              <div class="dropdown-signout"><i class="fa fa-sign-out"></i> <a href="login.html">Sign Out</a></div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- End: Header --> 
+<!-- Start: Main -->
+<div id="main"> 
+  <!-- Start: Sidebar -->
+  <aside id="sidebar">
+    <div id="sidebar-search">
+      <form role="search">
+        <input type="text" class="search-bar form-control" placeholder="Search">
+        <i class="fa fa-search field-icon-right"></i>
+        <button type="submit" class="btn btn-default hidden"></button>
+      </form>
+      <div class="sidebar-toggle"> <span class="glyphicon glyphicon-resize-horizontal"></span> </div>
+    </div>
+    <div id="sidebar-menu">
+      <ul class="nav sidebar-nav">
+        <li> <a class="accordion-toggle" href="#sideEight"><span class="glyphicons glyphicons-show_lines"></span><span class="sidebar-title">Multi Level Nav</span><span class="caret"></span></a>
+          <ul id="sideEight" class="nav sub-nav">
+            <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+            <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+            <li><a class="accordion-toggle" href="#sideEight-sub"><span class="glyphicons glyphicons-show_lines"></span>2nd Level Nav<span class="caret"></span></a>
+              <ul id="sideEight-sub" class="nav sub-nav">
+                <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+                <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+                <li><a class="accordion-toggle" href="#sideEight-sub-2"><span class="glyphicons glyphicons-show_lines"></span>3rd Level Nav<span class="caret"></span></a>
+                  <ul id="sideEight-sub-2" class="nav sub-nav">
+                    <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+                    <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+                    <li><a class="accordion-toggle" href="#sideEight-sub-2"><span class="glyphicons glyphicons-show_lines"></span>4th Level Nav<span class="caret"></span></a>
+                      <ul id="sideEight-sub-2" class="nav sub-nav">
+                        <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+                        <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+                        <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li> <a href="dashboard.html"><span class="glyphicons glyphicons-star"></span><span class="sidebar-title">Dashboard</span></a> </li>
+        <li> <a class="accordion-toggle" href="#resources"><span class="glyphicons glyphicons-settings"></span><span class="sidebar-title">Resources</span><span class="caret"></span></a>
+          <ul id="resources" class="nav sub-nav">
+            <li><a href="customizer.html"><span class="glyphicons glyphicons-edit"></span> Theme Customizer</a></li>
+            <li><a href="skin-demo.html"><span class="glyphicons glyphicons-magic"></span> Demo Style Switcher </a></li>
+            <li><a href="documentation/index.html"><span class="glyphicons glyphicons-book"></span> Documentation </a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideOne"><span class="glyphicons glyphicons-adjust_alt"></span><span class="sidebar-title">UI Elements</span><span class="caret"></span></a>
+          <ul id="sideOne" class="nav sub-nav">
+            <li><a href="portlets.html"><span class="glyphicons glyphicons-sort"></span> Portlets</a></li>
+            <li><a href="buttons.html"><span class="glyphicons glyphicons-macbook"></span> Buttons</a></li>
+            <li><a href="typography.html"><span class="glyphicons glyphicons-font"></span> Typography</a></li>
+            <li><a href="elements.html"><span class="glyphicons glyphicons-paperclip"></span> Elements</a></li>
+            <li><a href="charts.html"><span class="glyphicons glyphicons-stats"></span> Charts</a></li>
+            <li><a href="tabs.html"><span class="glyphicons glyphicons-adjust"></span> Tabs</a></li>
+            <li><a href="grid.html"><span class="glyphicons glyphicons-show_big_thumbnails"></span> Grid</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideTwo"><span class="glyphicons glyphicons-vcard"></span><span class="sidebar-title">Form Elements</span><span class="caret"></span></a>
+          <ul id="sideTwo" class="nav sub-nav">
+            <li><a href="forms.html"><span class="glyphicons glyphicons-link"></span> Form Elements</a></li>
+            <li><a href="validation.html"><span class="glyphicons glyphicons-ok"></span> Form Validation</a></li>
+            <li><a href="wizard.html"><span class="glyphicons glyphicons-magic"></span> Form Wizard</a></li>
+            <li><a href="editors.html"><span class="glyphicons glyphicons-pencil"></span> Editors</a></li>
+            <li><a href="editable.html"><span class="glyphicons glyphicons-edit"></span> Inline Editing</a></li>
+            <li><a href="xedit.html"><span class="glyphicons glyphicons-check"></span> X-editable</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideThree"><span class="glyphicons glyphicons-table"></span><span class="sidebar-title">Tables</span><span class="caret"></span></a>
+          <ul id="sideThree" class="nav sub-nav">
+            <li><a href="tables.html"><span class="glyphicons glyphicons-justify"></span> Tables</a></li>
+            <li><a href="datatables.html"><span class="glyphicons glyphicons-list"></span> DataTables</a></li>
+            <li><a href="pricing-tables.html"><span class="glyphicons glyphicons-usd"></span> Pricing Tables</a></li>
+          </ul>
+        </li>
+        <li class="active"> <a class="accordion-toggle menu-open" href="#sideFour"><span class="glyphicons glyphicons-cargo"></span><span class="sidebar-title">File Managers</span><span class="caret"></span></a>
+          <ul id="sideFour" class="nav sub-nav">
+            <li><a href="treeview.html"><span class="glyphicons glyphicons-tree_conifer"></span> TreeView</a></li>
+            <li><a href="file-manager.html"><span class="glyphicons glyphicons-cloud"></span> File Manager</a></li>
+            <li class="active"><a href="upload-tools.html"><span class="glyphicons glyphicons-cloud-upload"></span> File Uploaders</a></li>
+            <li><a href="dynamic-gallery.html"><span class="glyphicons glyphicons-picture"></span> Dynamic Gallery</a></li>
+            <li><a href="image-tools.html"><span class="glyphicons glyphicons-camera"></span> Image Tools</a></li>
+            <li><a href="nestable.html"><span class="glyphicons glyphicons-sampler"></span> Nestable</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideFive"><span class="glyphicons glyphicons-magic"></span><span class="sidebar-title">Extras</span><span class="caret"></span></a>
+          <ul id="sideFive" class="nav sub-nav">
+            <li><a href="icons.html"><span class="glyphicons glyphicons-flash"></span> Icons</a></li>
+            <li><a href="animations.html"><span class="glyphicons glyphicons-fire"></span> Animations</a></li>
+            <li><a href="sliders.html"><span class="glyphicons glyphicons-retweet"></span> Sliders</a></li>
+            <li><a href="sketchpad.html"><span class="glyphicons glyphicons-vector_path_square"></span> Sketchpad</a></li>
+          </ul>
+        </li>
+          <li> <a class="accordion-toggle" href="#sideSix"><span class="glyphicons glyphicons-globe"></span><span class="sidebar-title">Maps</span><span class="caret"></span></a>
+           <ul id="sideSix" class="nav sub-nav">
+             <li><a href="maps.html"><span class="glyphicons glyphicons-global"></span> GMaps</a></li>
+             <li><a href="maps-vector.html"><span class="glyphicons glyphicons-vector_path_circle"></span> Vector Maps</a></li>
+           </ul>
+         </li>
+          <li> <a href="widgets.html"><span class="glyphicons glyphicons-restart"></span><span class="sidebar-title">Widgets</span></a> </li>
+        <li> <a class="accordion-toggle" href="#sideSeven"><span class="glyphicons glyphicons-book_open"></span><span class="sidebar-title">Pages</span><span class="caret"></span></a>
+          <ul id="sideSeven" class="nav sub-nav">
+            <li><a href="invoice-page.html"><span class="glyphicons glyphicons glyphicons-print"></span> Printable Invoice</a></li>
+            <li><a href="timeline.html"><span class="glyphicons glyphicons-film"></span> Timeline</a></li>
+            <li><a href="gallery.html"><span class="glyphicons glyphicons-picture"></span> Gallery</a></li>
+            <li><a href="calendar.html"><span class="glyphicons glyphicons-calendar"></span> Calendar</a></li>
+            <li><a href="messages.html"><span class="glyphicons glyphicons-envelope"></span> Messages</a></li>
+            <li><a href="profile.html"><span class="glyphicons glyphicons-user"></span> User Profile</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideEight"><span class="glyphicons glyphicons-warning_sign"></span><span class="sidebar-title">Utility Pages</span><span class="caret"></span></a>
+          <ul id="sideEight" class="nav sub-nav">
+            <li><a href="faq.html"><span class="glyphicons glyphicons-edit"></span> Faq Page</a></li>
+            <li><a href="login.html"><span class="glyphicons glyphicons-power"></span> Login Page</a></li>
+            <li><a href="screen-lock.html"><span class="glyphicons glyphicons-lock"></span> Screen Lock</a></li>
+            <li><a href="coming-soon.html"><span class="glyphicons glyphicons-road"></span> Coming Soon</a></li>
+            <li><a href="404-page.html"><span class="glyphicons glyphicons-circle_remove"></span> 404 Page</a></li>
+            <li><a href="500-page.html"><span class="glyphicons glyphicons-circle_exclamation_mark"></span> 500 Page</a></li>
+            <li><a href="blank.html"><span class="glyphicons glyphicons-unchecked"></span> Blank Page</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!-- End: Sidebar --> 
+  <!-- Start: Content -->
+  <section id="content">
+    <div id="topbar">
+      <ol class="breadcrumb">
+        <li><a href="dashboard.html"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Upload Tools</li>
+      </ol>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel">
+            <div class="panel-heading"> <i class="fa fa-cloud-upload"></i> Dropzone Uploader</div>
+            <div class="panel-body">
+              <form action="/file-upload" class="dropzone" id="dropZone">
+                <div class="fallback">
+                  <input name="file" type="file" multiple />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+        <div class="panel">
+            <div class="panel-heading">
+              <div class="panel-title"><i class="fa fa-cloud-upload"></i> JQuery Uploader</div>
+              <div class="panel-btns pull-right margin-right">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default btn-gradient sort" data-sort="random">Rand</button>
+                  <button type="button" class="btn btn-default btn-gradient sort active" data-sort="data-cat" data-order="asc">Asc</button>
+                  <button type="button" class="btn btn-default btn-gradient sort" data-sort="data-cat" data-order="desc">Desc</button>
+                </div>
+              </div>
+            </div>
+            <form id="fileupload" action="//jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
+              <noscript>
+              <input type="hidden" name="redirect" value="http://blueimp.github.io/jQuery-File-Upload/">
+              </noscript>
+              <div class="panel-menu">
+                <div class="fileupload-buttonbar"> <span class="btn btn-info btn-gradient fileinput-button margin-right-sm"> <i class="glyphicon glyphicon-plus"></i> <span>Add files...</span>
+                  <input type="file" name="files[]" multiple>
+                  </span>
+                  <button type="submit" class="btn btn-default btn-gradient start margin-right-sm"> <i class="glyphicons glyphicons-upload"></i> <span>Start upload</span> </button>
+                  <button type="reset" class="btn btn-default btn-gradient cancel margin-right-sm"> <i class="glyphicon glyphicon-ban-circle"></i> <span>Cancel upload</span> </button>
+                  <button type="button" class="btn btn-default btn-gradient delete margin-right-sm"> <i class="glyphicon glyphicon-trash"></i> <span>Delete</span> </button>
+                  <span class="margin-left-sm">
+                  <input type="checkbox" class="checkbox toggle inline-object">
+                  </span> <span class="fileupload-process"></span>
+                  <div class="col-lg-5 hidden fileupload-progress fade">
+                    <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                    </div>
+                    <div class="progress-extended">&nbsp;</div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-body">
+                <table role="presentation" class="table table-striped">
+                  <tbody class="files">
+                  </tbody>
+                </table>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End: Content --> 
+</div>
+<!-- End: Main -->
+
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
+  <div class="slides"></div>
+  <h3 class="title"></h3>
+  <a class="prev">‹</a> <a class="next">›</a> <a class="close">×</a> <a class="play-pause"></a>
+  <ol class="indicator">
+  </ol>
+</div>
+
+<!-- Core Javascript - Via CDN --> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> <!-- Plugins --> 
+<script type="text/javascript" src="vendor/plugins/mfpopup/dist/jquery.magnific-popup.js"></script> 
+<script type="text/javascript" src="vendor/plugins/dropzone/downloads/dropzone.min.js"></script> 
+
+<!-- Theme Javascript --> 
+<script type="text/javascript" src="js/uniform.min.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/custom.js"></script> 
+<script type="text/javascript">
+ jQuery(document).ready(function() {
+
+	// Init Theme Core 	  
+	Core.init();
+					
+	// Dropzone autoattaches to "dropzone" class.
+	// Configure Dropzone options
+	Dropzone.options.dropZone = {
+		paramName: "file", // The name that will be used to transfer the file
+		maxFilesize: 0.5, // MB
+	  
+		addRemoveLinks : true,
+		dictDefaultMessage :
+		'<i class="fa fa-cloud-upload"></i> \
+		 <span class="main-text"><b>Drop Files</b> to upload</span> <br /> \
+		 <span class="sub-text">(or click)</span> \
+		',
+		dictResponseError: 'Server not Configured'
+	};  
+		
+});
+</script> 
+<script id="template-upload" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-upload fade">
+        <td>
+            <span class="preview"></span>
+        </td>
+        <td>
+            <p class="name">{%=file.name%}</p>
+            <strong class="error text-danger"></strong>
+        </td>
+        <td>
+            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
+        </td>
+        <td>
+            {% if (!i && !o.options.autoUpload) { %}
+                <button class="btn btn-success btn-gradient start" disabled>
+                    <i class="glyphicons glyphicons-upload"></i> 
+                    <span>Start</span>
+                </button>
+            {% } %}
+            {% if (!i) { %}
+                <button class="btn btn-danger btn-gradient cancel">
+                    <i class="glyphicon glyphicon-ban-circle"></i> 
+                    <span>Cancel</span>
+                </button>
+            {% } %}
+        </td>
+    </tr>
+{% } %}
+</script> 
+<script id="template-download" type="text/x-tmpl">
+{% for (var i=0, file; file=o.files[i]; i++) { %}
+    <tr class="template-download fade">
+        <td>
+            <span class="preview">
+                {% if (file.thumbnailUrl) { %}
+                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+                {% } %}
+            </span>
+        </td>
+        <td>
+            <p class="name">
+                {% if (file.url) { %}
+                    <a href="{%=file.url%}" class="item-link" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
+                {% } else { %}
+                    <span>{%=file.name%}</span>
+                {% } %}
+            </p>
+            {% if (file.error) { %}
+                <div><span class="label label-danger">Error</span> {%=file.error%}</div>
+            {% } %}
+        </td>
+        <td>
+            <span class="size">{%=o.formatFileSize(file.size)%}</span>
+        </td>
+        <td>
+            {% if (file.deleteUrl) { %}
+                <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+                    <i class="glyphicon glyphicon-trash"></i> 
+                    <span>Delete</span>
+                </button>
+                <input type="checkbox" name="delete" value="1" class="toggle hidden">
+            {% } else { %}
+                <button class="btn btn-warning cancel">
+                    <i class="glyphicon glyphicon-ban-circle"></i> 
+                    <span>Cancel</span>
+                </button>
+            {% } %}
+        </td>
+    </tr>
+{% } %}
+</script> 
+<!-- Optionally loading ALL upload plugins - For demonstration purposes only --> 
+<script src="vendor/plugins/jqueryupload/plugins/blueimp/js/tmpl.min.js"></script> 
+<script src="vendor/plugins/jqueryupload/plugins/blueimp/js/load-image.min.js"></script> 
+<script src="vendor/plugins/jqueryupload/plugins/blueimp/js/canvas-to-blob.min.js"></script> 
+<script src="vendor/plugins/jqueryupload/plugins/blueimp/js/jquery.blueimp-gallery.min.js"></script> 
+<script src="vendor/plugins/jqueryupload/js/jquery.iframe-transport.js"></script> 
+<script src="vendor/plugins/jqueryupload/js/jquery.fileupload.js"></script> 
+<script src="vendor/plugins/jqueryupload/js/jquery.fileupload-process.js"></script> 
+<script src="vendor/plugins/jqueryupload/js/jquery.fileupload-image.js"></script> 
+<script src="vendor/plugins/jqueryupload/js/jquery.fileupload-audio.js"></script> 
+<script src="vendor/plugins/jqueryupload/js/jquery.fileupload-video.js"></script> 
+<script src="vendor/plugins/jqueryupload/js/jquery.fileupload-validate.js"></script> 
+<script src="vendor/plugins/jqueryupload/js/jquery.fileupload-ui.js"></script> 
+<script src="vendor/plugins/jqueryupload/js/main.js"></script> 
+
+<!--[if (gte IE 8)&(lt IE 10)]>
+<script src="js/cors/jquery.xdr-transport.js"></script>
+<![endif]-->
+
+</body>
+
+</html>

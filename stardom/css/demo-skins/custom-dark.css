@@ -1,0 +1,85 @@
+/*----------------------------------------------
+ * This file is an alternate theme created using
+ * the themes included customization tool. This
+ * stylesheet is used only in "skin-demo.html"
+ * and is for demonstrative purposes only.
+-----------------------------------------------*/
+.header-btns > div > button:focus {
+  color: #666; }
+
+/* Place custom styles below this line 
+---------------------------------------*/
+.navbar {
+  background-color: #323232;
+  background-image: none; }
+
+.header-btns button.btn {
+  background-color: #bf0d14;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.15) 35%, rgba(0, 0, 0, 0.12) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 35%, rgba(0, 0, 0, 0.12) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#80ffffff",endColorstr="#00ffffff",GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #930b1f;
+  color: #1e1c1f;
+  text-shadow: none; }
+
+#sidebar:before {
+  background: #f2f2f2; }
+
+#sidebar ul.sidebar-nav > li > a {
+  background: #f2f2f2;
+  border-color: #ddd; }
+
+#sidebar ul.sidebar-nav li ul.sub-nav {
+  background: #f8f8f8;
+  border-color: #ddd; }
+
+#sidebar-search {
+  background-color: white;
+  background-image: none; }
+
+ul.sidebar-nav ul.sub-nav li .glyphicons {
+  color: #aaaaaa; }
+
+ul.sidebar-nav li.active > a .glyphicons {
+  color: #e4151d; }
+
+ul.sidebar-nav > li > a span.caret {
+  color: #777777; }
+
+ul.sidebar-nav > li.active > a span.caret {
+  color: #e4151d; }
+
+.sidebar-toggle {
+  color: #bbbbbb;
+  background-color: white;
+  background-image: none; }
+
+#topbar {
+  background-color: white;
+  background-image: none; }
+
+.breadcrumb li a i.fa {
+  color: #323232; }
+
+.breadcrumb li a {
+  color: #d10011; }
+
+#content:after {
+  background-color: #e5e5e5;
+  background-image: none; }
+
+.panel-title {
+  font-size: 15px;
+  color: #21334b; }
+
+.panel-title .fa {
+  font-size: 22px;
+  color: #e4151d; }
+
+.panel {
+  box-shadow: none; }
+
+.panel-heading {
+  background-color: #f0f0f0;
+  background-image: none; }

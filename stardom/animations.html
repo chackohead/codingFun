@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<title>Stardom - A Responsive HTML5 Admin UI Template Theme</title>
+<meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme" />
+<meta name="description" content="Stardom - A Responsive HTML5 Admin UI Template Theme">
+<meta name="author" content="Holladay">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font CSS  -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+
+<!-- Core CSS  -->
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/glyphicons_pro/glyphicons.min.css">
+
+<!-- Plugin CSS -->
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/pages.css">
+<link rel="stylesheet" type="text/css" href="css/plugins.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- Boxed-Layout CSS -->
+<link rel="stylesheet" type="text/css" href="css/boxed.css">
+
+<!-- Demonstration CSS -->
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+
+<!-- Your Custom CSS -->
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="animations-page"> 
+
+<!-- Start: Header -->
+<header class="navbar navbar-fixed-top">
+  <div class="pull-left"> <a class="navbar-brand" href="dashboard.html">
+    <div class="navbar-logo"><img src="img/logos/logo-red.png" class="img-responsive" alt="logo"/></div>
+    </a> </div>
+  <div class="pull-right header-btns">
+    <div class="messages-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-comment glyphicon-lg"></span> <b>4</b> </button>
+      <ul class="dropdown-menu checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Recent Messages <span class="pull-right glyphicon glyphicon-comment"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/2.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Maggie</b> - <small class="text-muted">12 minutes ago</small><br />
+                Great work Yesterday!</div>
+            </li>
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/3.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Robert</b> - <small class="text-muted">3 hours ago</small><br />
+                Is the Titan Project still on?</div>
+            </li>
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/1.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Cynthia</b> - <small class="text-muted">14 hours ago</small><br />
+                Don't forget about the staff meeting tomorrow</div>
+            </li>
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/4.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Matt</b> - <small class="text-muted">2 days ago</small><br />
+                Thor Project cancelled, Sorry.</div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-footer"><a href="#">View All Messages <i class="fa fa-caret-right"></i> </a></li>
+      </ul>
+    </div>
+    <div class="alerts-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicons glyphicons-bell glyphicon-lg"></span> <b>3</b> </button>
+      <ul class="dropdown-menu checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Recent Alerts <span class="pull-right glyphicon glyphicon-bell"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-icon"><i style="color: #0066ad;" class="fa fa-facebook"></i> </div>
+              <div class="item-message"><a href="#">Facebook likes reached <b>8,200</b></a></div>
+            </li>
+            <li>
+              <div class="item-icon"><i style="color: #5cb85c;" class="fa fa-check"></i> </div>
+              <div class="item-message"><a href="#">Robert <b>completed task</b> - Client SEO Revamp</a></div>
+            </li>
+            <li>
+              <div class="item-icon"><i style="color: #f0ad4e" class="fa fa-user"></i> </div>
+              <div class="item-message"><a href="#"><b>Marko</b> logged 12 hours</a></div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-footer"><a href="#">View All Alerts <i class="fa fa-caret-right"></i> </a></li>
+      </ul>
+    </div>
+    <div class="tasks-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicons glyphicons-tag glyphicon-lg"></span> <b>7</b> </button>
+      <ul class="dropdown-menu dropdown-checklist checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Recent Tasks <span class="pull-right glyphicon glyphicon-tag"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-icon"><i class="fa fa-pencil"></i> </div>
+              <div class="item-message text-slash"><a>Try Clicking me!</a></div>
+              <div class="item-label"><span class="label label-danger">Urgent</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-phone"></i> </div>
+              <div class="item-message text-slash"><a>Contact Client and request Approval</a></div>
+              <div class="item-label"><span class="label label-info">Normal</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-flask"></i> </div>
+              <div class="item-message text-slash"><a>Find new Python Developer </a></div>
+              <div class="item-label"><span class="label label-success">Completed</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-facebook"></i> </div>
+              <div class="item-message text-slash"><a>Update Facebook Page with Halloween Pictures</a></div>
+              <div class="item-label"><span class="label label-primary">In Progress</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-group"></i> </div>
+              <div class="item-message text-slash"><a>Organize next Staff Meeting</a></div>
+              <div class="item-label"><span class="label label-success">Completed</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-plane"></i> </div>
+              <div class="item-message text-slash"><a>Interview new applicant</a></div>
+              <div class="item-label"><span class="label label-warning">Moderate</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-footer"><a href="#">View All Tasks <i class="fa fa-caret-right"></i> </a></li>
+      </ul>
+    </div>
+    <div class="btn-group user-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicons glyphicons-user glyphicon-lg"></span> <b>Holladay</b> </button>
+      <button type="button" class="btn btn-default btn-gradient btn-sm dropdown-toggle padding-none" data-toggle="dropdown"> <img src="img/avatars/header/header-login.png" alt="user avatar" width="28" height="28" /> </button>
+      <ul class="dropdown-menu checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Your Account <span class="pull-right glyphicon glyphicon-user"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-icon"><i class="fa fa-envelope-o"></i> </div>
+              <a class="item-message" href="messages.html">Messages</a> </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-calendar"></i> </div>
+              <a class="item-message" href="calendar.html">Calendar</a> </li>
+            <li class="border-bottom-none">
+              <div class="item-icon"><i class="fa fa-cog"></i> </div>
+              <a class="item-message" href="customizer.html">Settings</a> </li>
+            <li class="padding-none">
+              <div class="dropdown-lockout"><i class="fa fa-lock"></i> <a href="screen-lock.html">Screen Lock</a></div>
+              <div class="dropdown-signout"><i class="fa fa-sign-out"></i> <a href="login.html">Sign Out</a></div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- End: Header --> 
+<!-- Start: Main -->
+<div id="main"> 
+  <!-- Start: Sidebar -->
+  <aside id="sidebar">
+    <div id="sidebar-search">
+      <form role="search">
+        <input type="text" class="search-bar form-control" placeholder="Search">
+        <i class="fa fa-search field-icon-right"></i>
+        <button type="submit" class="btn btn-default hidden"></button>
+      </form>
+      <div class="sidebar-toggle"> <span class="glyphicon glyphicon-resize-horizontal"></span> </div>
+    </div>
+    <div id="sidebar-menu">
+      <ul class="nav sidebar-nav">
+        <li> <a class="accordion-toggle" href="#sideEight"><span class="glyphicons glyphicons-show_lines"></span><span class="sidebar-title">Multi Level Nav</span><span class="caret"></span></a>
+          <ul id="sideEight" class="nav sub-nav">
+            <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+            <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+            <li><a class="accordion-toggle" href="#sideEight-sub"><span class="glyphicons glyphicons-show_lines"></span>2nd Level Nav<span class="caret"></span></a>
+              <ul id="sideEight-sub" class="nav sub-nav">
+                <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+                <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+                <li><a class="accordion-toggle" href="#sideEight-sub-2"><span class="glyphicons glyphicons-show_lines"></span>3rd Level Nav<span class="caret"></span></a>
+                  <ul id="sideEight-sub-2" class="nav sub-nav">
+                    <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+                    <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+                    <li><a class="accordion-toggle" href="#sideEight-sub-2"><span class="glyphicons glyphicons-show_lines"></span>4th Level Nav<span class="caret"></span></a>
+                      <ul id="sideEight-sub-2" class="nav sub-nav">
+                        <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+                        <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+                        <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li> <a href="dashboard.html"><span class="glyphicons glyphicons-star"></span><span class="sidebar-title">Dashboard</span></a> </li>
+        <li> <a class="accordion-toggle" href="#resources"><span class="glyphicons glyphicons-settings"></span><span class="sidebar-title">Resources</span><span class="caret"></span></a>
+          <ul id="resources" class="nav sub-nav">
+            <li><a href="customizer.html"><span class="glyphicons glyphicons-edit"></span> Theme Customizer</a></li>
+            <li><a href="skin-demo.html"><span class="glyphicons glyphicons-magic"></span> Demo Style Switcher </a></li>
+            <li><a href="documentation/index.html"><span class="glyphicons glyphicons-book"></span> Documentation </a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideOne"><span class="glyphicons glyphicons-adjust_alt"></span><span class="sidebar-title">UI Elements</span><span class="caret"></span></a>
+          <ul id="sideOne" class="nav sub-nav">
+            <li><a href="portlets.html"><span class="glyphicons glyphicons-sort"></span> Portlets</a></li>
+            <li><a href="buttons.html"><span class="glyphicons glyphicons-macbook"></span> Buttons</a></li>
+            <li><a href="typography.html"><span class="glyphicons glyphicons-font"></span> Typography</a></li>
+            <li><a href="elements.html"><span class="glyphicons glyphicons-paperclip"></span> Elements</a></li>
+            <li><a href="charts.html"><span class="glyphicons glyphicons-stats"></span> Charts</a></li>
+            <li><a href="tabs.html"><span class="glyphicons glyphicons-adjust"></span> Tabs</a></li>
+            <li><a href="grid.html"><span class="glyphicons glyphicons-show_big_thumbnails"></span> Grid</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideTwo"><span class="glyphicons glyphicons-vcard"></span><span class="sidebar-title">Form Elements</span><span class="caret"></span></a>
+          <ul id="sideTwo" class="nav sub-nav">
+            <li><a href="forms.html"><span class="glyphicons glyphicons-link"></span> Form Elements</a></li>
+            <li><a href="validation.html"><span class="glyphicons glyphicons-ok"></span> Form Validation</a></li>
+            <li><a href="wizard.html"><span class="glyphicons glyphicons-magic"></span> Form Wizard</a></li>
+            <li><a href="editors.html"><span class="glyphicons glyphicons-pencil"></span> Editors</a></li>
+            <li><a href="editable.html"><span class="glyphicons glyphicons-edit"></span> Inline Editing</a></li>
+            <li><a href="xedit.html"><span class="glyphicons glyphicons-check"></span> X-editable</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideThree"><span class="glyphicons glyphicons-table"></span><span class="sidebar-title">Tables</span><span class="caret"></span></a>
+          <ul id="sideThree" class="nav sub-nav">
+            <li><a href="tables.html"><span class="glyphicons glyphicons-justify"></span> Tables</a></li>
+            <li><a href="datatables.html"><span class="glyphicons glyphicons-list"></span> DataTables</a></li>
+            <li><a href="pricing-tables.html"><span class="glyphicons glyphicons-usd"></span> Pricing Tables</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideFour"><span class="glyphicons glyphicons-cargo"></span><span class="sidebar-title">File Managers</span><span class="caret"></span></a>
+          <ul id="sideFour" class="nav sub-nav">
+            <li><a href="treeview.html"><span class="glyphicons glyphicons-tree_conifer"></span> TreeView</a></li>
+            <li><a href="file-manager.html"><span class="glyphicons glyphicons-cloud"></span> File Manager</a></li>
+            <li><a href="upload-tools.html"><span class="glyphicons glyphicons-cloud-upload"></span> File Uploaders</a></li>
+            <li><a href="dynamic-gallery.html"><span class="glyphicons glyphicons-picture"></span> Dynamic Gallery</a></li>
+            <li><a href="image-tools.html"><span class="glyphicons glyphicons-camera"></span> Image Tools</a></li>
+            <li><a href="nestable.html"><span class="glyphicons glyphicons-sampler"></span> Nestable</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle menu-open" href="#sideFive"><span class="glyphicons glyphicons-magic"></span><span class="sidebar-title">Extras</span><span class="caret"></span></a>
+          <ul id="sideFive" class="nav sub-nav">
+            <li><a href="icons.html"><span class="glyphicons glyphicons-flash"></span> Icons</a></li>
+            <li class="active"><a href="animations.html"><span class="glyphicons glyphicons-fire"></span> Animations</a></li>
+            <li><a href="sliders.html"><span class="glyphicons glyphicons-retweet"></span> Sliders</a></li>
+            <li><a href="sketchpad.html"><span class="glyphicons glyphicons-vector_path_square"></span> Sketchpad</a></li>
+          </ul>
+        </li>
+          <li> <a class="accordion-toggle" href="#sideSix"><span class="glyphicons glyphicons-globe"></span><span class="sidebar-title">Maps</span><span class="caret"></span></a>
+           <ul id="sideSix" class="nav sub-nav">
+             <li><a href="maps.html"><span class="glyphicons glyphicons-global"></span> GMaps</a></li>
+             <li><a href="maps-vector.html"><span class="glyphicons glyphicons-vector_path_circle"></span> Vector Maps</a></li>
+           </ul>
+         </li>
+          <li> <a href="widgets.html"><span class="glyphicons glyphicons-restart"></span><span class="sidebar-title">Widgets</span></a> </li>
+        <li> <a class="accordion-toggle" href="#sideSeven"><span class="glyphicons glyphicons-book_open"></span><span class="sidebar-title">Pages</span><span class="caret"></span></a>
+          <ul id="sideSeven" class="nav sub-nav">
+            <li><a href="invoice-page.html"><span class="glyphicons glyphicons glyphicons-print"></span> Printable Invoice</a></li>
+            <li><a href="timeline.html"><span class="glyphicons glyphicons-film"></span> Timeline</a></li>
+            <li><a href="gallery.html"><span class="glyphicons glyphicons-picture"></span> Gallery</a></li>
+            <li><a href="calendar.html"><span class="glyphicons glyphicons-calendar"></span> Calendar</a></li>
+            <li><a href="messages.html"><span class="glyphicons glyphicons-envelope"></span> Messages</a></li>
+            <li><a href="profile.html"><span class="glyphicons glyphicons-user"></span> User Profile</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideEight"><span class="glyphicons glyphicons-warning_sign"></span><span class="sidebar-title">Utility Pages</span><span class="caret"></span></a>
+          <ul id="sideEight" class="nav sub-nav">
+            <li><a href="faq.html"><span class="glyphicons glyphicons-edit"></span> Faq Page</a></li>
+            <li><a href="login.html"><span class="glyphicons glyphicons-power"></span> Login Page</a></li>
+            <li><a href="screen-lock.html"><span class="glyphicons glyphicons-lock"></span> Screen Lock</a></li>
+            <li><a href="coming-soon.html"><span class="glyphicons glyphicons-road"></span> Coming Soon</a></li>
+            <li><a href="404-page.html"><span class="glyphicons glyphicons-circle_remove"></span> 404 Page</a></li>
+            <li><a href="500-page.html"><span class="glyphicons glyphicons-circle_exclamation_mark"></span> 500 Page</a></li>
+            <li><a href="blank.html"><span class="glyphicons glyphicons-unchecked"></span> Blank Page</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!-- End: Sidebar --> 
+  <!-- Start: Content -->
+  <section id="content">
+    <div id="topbar">
+      <ol class="breadcrumb">
+        <li><a href="dashboard.html"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="animations.html">Home</a></li>
+        <li class="active">Animations</li>
+      </ol>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-7" >
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-heading">
+                  <div class="panel-title hidden-sm"> <span class="glyphicon glyphicon-hand-down"></span> Click an Animation Below</div>
+                  <ul class="nav panel-tabs hidden-xs">
+                    <li class="active"><a href="#tab1" data-toggle="tab">Entrances</a></li>
+                    <li><a href="#tab2" data-toggle="tab">Exits</a></li>
+                    <li><a href="#tab3" data-toggle="tab">Extra</a></li>
+                  </ul>
+                </div>
+                <div class="panel-body animate-me-btns">
+                  <div class="alert alert-info">The Stardom Admin UI Theme makes creating beautiful animations a breeze. It doesn't even require Javascript. Just add two classes and you have animations that are ready for the world to see. You're going to love it.</div>
+                  <div class="tab-content">
+                    <div id="tab1" class="tab-pane active">
+                      <h4>Bouncing entrances</h4>
+                      <a class="btn btn-default btn-gradient" data-test="bounceInRight">bounceInRight</a> <a class="btn btn-default btn-gradient" data-test="bounceInLeft">bounceInLeft</a> <a class="btn btn-default btn-gradient" data-test="bounceIn">bounceIn</a> <a class="btn btn-default btn-gradient" data-test="bounceInDown">bounceInDown</a> <a class="btn btn-default btn-gradient" data-test="bounceInUp">bounceInUp</a>
+                      <hr class="short" />
+                      <h4>Fading entrances</h4>
+                      <a class="btn btn-default btn-gradient" data-test="fadeIn">fadeIn</a> <a class="btn btn-default btn-gradient" data-test="fadeInUp">fadeInUp</a> <a class="btn btn-default btn-gradient" data-test="fadeInDown">fadeInDown</a> <a class="btn btn-default btn-gradient" data-test="fadeInLeft">fadeInLeft</a> <a class="btn btn-default btn-gradient" data-test="fadeInRight">fadeInRight</a> <a class="btn btn-default btn-gradient" data-test="fadeInUpBig">fadeInUpBig</a> <a class="btn btn-default btn-gradient" data-test="fadeInDownBig">fadeInDownBig</a> <a class="btn btn-default btn-gradient" data-test="fadeInLeftBig">fadeInLeftBig</a> <a class="btn btn-default btn-gradient" data-test="fadeInRightBig">fadeInRightBig</a>
+                      <hr class="short" />
+                      <h4>Rotating entrances</h4>
+                      <a class="btn btn-default btn-gradient" data-test="rotateIn">rotateIn</a> <a class="btn btn-default btn-gradient" data-test="rotateInDownLeft">rotateInDownLeft</a> <a class="btn btn-default btn-gradient" data-test="rotateInDownRight">rotateInDownRight</a> <a class="btn btn-default btn-gradient" data-test="rotateInUpLeft">rotateInUpLeft</a> <a class="btn btn-default btn-gradient" data-test="rotateInUpRight">rotateInUpRight</a> </div>
+                    <div id="tab2" class="tab-pane">
+                      <h4>Bouncing exits</h4>
+                      <a class="btn btn-default btn-gradient" data-test="bounceOutRight">bounceOutRight</a> <a class="btn btn-default btn-gradient" data-test="bounceOutLeft">bounceOutLeft</a> <a class="btn btn-default btn-gradient" data-test="bounceOut">bounceOut</a> <a class="btn btn-default btn-gradient" data-test="bounceOutDown">bounceOutDown</a> <a class="btn btn-default btn-gradient" data-test="bounceOutUp">bounceOutUp</a>
+                      <hr class="short" />
+                      <h4>Fading exits</h4>
+                      <a class="btn btn-default btn-gradient" data-test="fadeOut">fadeOut</a> <a class="btn btn-default btn-gradient" data-test="fadeOutUp">fadeOutUp</a> <a class="btn btn-default btn-gradient" data-test="fadeOutDown">fadeOutDown</a> <a class="btn btn-default btn-gradient" data-test="fadeOutLeft">fadeOutLeft</a> <a class="btn btn-default btn-gradient" data-test="fadeOutRight">fadeOutRight</a> <a class="btn btn-default btn-gradient" data-test="fadeOutUpBig">fadeOutUpBig</a> <a class="btn btn-default btn-gradient" data-test="fadeOutDownBig">fadeOutDownBig</a> <a class="btn btn-default btn-gradient" data-test="fadeOutLeftBig">fadeOutLeftBig</a> <a class="btn btn-default btn-gradient" data-test="fadeOutRightBig">fadeOutRightBig</a>
+                      <hr class="short" />
+                      <h4>Rotating exits</h4>
+                      <a class="btn btn-default btn-gradient" data-test="rotateOut">rotateOut</a> <a class="btn btn-default btn-gradient" data-test="rotateOutDownLeft">rotateOutDownLeft</a> <a class="btn btn-default btn-gradient" data-test="rotateOutDownRight">rotateOutDownRight</a> <a class="btn btn-default btn-gradient" data-test="rotateOutUpLeft">rotateOutUpLeft</a> <a class="btn btn-default btn-gradient" data-test="rotateOutUpRight">rotateOutUpRight</a> </div>
+                    <div id="tab3" class="tab-pane">
+                      <h4>Attention seekers</h4>
+                      <a class="btn btn-default btn-gradient" data-test="bounce">bounce</a> <a class="btn btn-default btn-gradient" data-test="shake">shake</a> <a class="btn btn-default btn-gradient" data-test="tada">tada</a> <a class="btn btn-default btn-gradient" data-test="swing">swing</a> <a class="btn btn-default btn-gradient" data-test="wobble">wobble</a> <a class="btn btn-default btn-gradient" data-test="pulse">pulse</a> <a class="btn btn-default btn-gradient btn-gradient" data-test="flash">flash</a>
+                      <hr class="short" />
+                      <h4>Flippers</h4>
+                      <a class="btn btn-default btn-gradient" data-test="flip">flip</a> <a class="btn btn-default btn-gradient" data-test="flipInX">flipInX</a> <a class="btn btn-default btn-gradient" data-test="flipOutX">flipOutX</a> <a class="btn btn-default btn-gradient" data-test="flipInY">flipInY</a> <a class="btn btn-default btn-gradient" data-test="flipOutY">flipOutY</a>
+                      <hr class="short" />
+                      <h4>Sliders</h4>
+                      <a class="btn btn-default btn-gradient" data-test="slideInDown">slideInDown</a> <a class="btn btn-default btn-gradient" data-test="slideInLeft">slideInLeft</a> <a class="btn btn-default btn-gradient" data-test="slideInRight">slideInRight</a> <a class="btn btn-default btn-gradient" data-test="slideOutUp">slideOutUp</a> <a class="btn btn-default btn-gradient" data-test="slideOutLeft">slideOutLeft</a> <a class="btn btn-default btn-gradient" data-test="slideOutRight">slideOutRight</a>
+                      <hr class="short" />
+                      <h4>Specials</h4>
+                      <a class="btn btn-default btn-gradient" data-test="lightSpeedIn">lightSpeedIn</a> <a class="btn btn-default btn-gradient" data-test="lightSpeedOut">lightSpeedOut</a> <a class="btn btn-default btn-gradient" data-test="hinge">hinge</a> <a class="btn btn-default btn-gradient" data-test="rollIn">rollIn</a> <a class="btn btn-default btn-gradient" data-test="rollOut">rollOut</a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-5">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel animated" id="animate-me-panel">
+                <div class="panel-heading">
+                  <div class="panel-title"><span class="glyphicon glyphicon-star"></span> I'm gonna Dance! </div>
+                </div>
+                <div class="panel-body"> <img src="img/stock/car/large/1.jpg" class="img-responsive" alt="car"> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End: Content --> 
+</div>
+<!-- End: Main --> 
+
+<!-- Core Javascript - via CDN --> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> <!-- Theme Javascript --> 
+<script type="text/javascript" src="js/uniform.min.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/custom.js"></script> 
+<script>
+ jQuery(document).ready(function() {
+
+	// Init Theme Core 	  
+	Core.init();
+		
+	// Example animate buttons
+	$('.animate-me-btns a').click(function () {
+		var animateVal = $(this).attr('data-test');
+		testAnim(animateVal)		
+	});
+	
+	// Simply adds CSS classes required for animation
+	// and then removes them after an elapsed time
+	function testAnim(x) {
+		$('#animate-me-panel').addClass(x);
+		var wait = window.setTimeout( function(){
+			$('#animate-me-panel').removeClass(x)},
+			1300
+		);
+	}
+	
+});
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,809 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<title>Stardom - A Responsive HTML5 Admin UI Template Theme</title>
+<meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme" />
+<meta name="description" content="Stardom - A Responsive HTML5 Admin UI Template Theme">
+<meta name="author" content="Holladay">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font CSS  -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+
+<!-- Core CSS  -->
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/glyphicons_pro/glyphicons.min.css">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/pages.css">
+<link rel="stylesheet" type="text/css" href="css/plugins.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- Boxed-Layout CSS -->
+<link rel="stylesheet" type="text/css" href="css/boxed.css">
+
+<!-- Demonstration CSS -->
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+
+<!-- Customizer CSS -->
+<link rel="stylesheet" type="text/css" href="css/customizer.css">
+
+<!-- Your Custom Styles -->
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body> 
+<!-- Start: Theme Preview Pane -->
+<div id="skin-toolbox">
+  <div class="skin-toolbox-toggle"> <i class="fa fa-flask"></i> </div>
+  <div class="skin-toolbox-panel">
+    <h4 class="padding-left-sm">Theme Options</h4>
+    <form id="skin-toolbox-form">
+      <div class="form-group">
+        <label class="checkbox-inline">
+          <input id="header-option" class="checkbox" type="checkbox" checked>
+          Fixed <b>Header</b> </label>
+      </div>
+      <div class="form-group">
+        <label class="checkbox-inline">
+          <input id="sidebar-option" class="checkbox" type="checkbox">
+          Fixed <b>Sidebar</b> </label>
+      </div>
+      <div class="form-group">
+        <label class="checkbox-inline option-disabled">
+          <input id="breadcrumb-option" class="checkbox" type="checkbox" disabled>
+          Fixed <b>Breadcrumbs</b> </label>
+      </div>
+      <hr class="short" style="margin: 7px 10px;" />
+      <div class="form-group">
+        <label class="checkbox-inline">
+          <input id="breadcrumb-hidden" class="checkbox" type="checkbox">
+          Hide <b>Breadcrumbs</b> </label>
+      </div>
+      <div class="form-group margin-bottom-lg">
+        <label class="checkbox-inline">
+          <input id="searchbar-hidden" class="checkbox" type="checkbox">
+          Hide <b>Search Bar</b> </label>
+      </div>
+      <h4 class="padding-left-sm">Layout Options</h4>
+      <div class="form-group">
+        <label class="radio-inline">
+          <input class="radio" type="radio" name="optionsRadios" id="fullwidth-option" checked>
+          Fullwidth </label>
+      </div>
+      <div class="form-group">
+        <label class="radio-inline">
+          <input class="radio" type="radio" name="optionsRadios" id="boxed-option">
+          Boxed Layout</label>
+      </div>
+      <hr class="short"/>
+      <div class="form-group"> <a href="customizer.html" id="customizer-link" class="btn btn-warning btn-gradient btn-block padding-bottom padding-top">CUSTOMIZER</a> </div>
+    </form>
+  </div>
+</div>
+
+<!-- Start: Header -->
+<header class="navbar navbar-fixed-top">
+  <div class="pull-left"> <a class="navbar-brand" href="dashboard.html">
+    <div class="navbar-logo"><img src="img/logos/logo-red.png" class="img-responsive" alt="logo"/></div>
+    </a> </div>
+  <div class="pull-right header-btns">
+    <div class="messages-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-comment"></span> <b>4</b> </button>
+      <ul class="dropdown-menu checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Recent Messages <span class="pull-right glyphicons glyphicons-comment"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/2.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Maggie</b> - <small class="text-muted">12 minutes ago</small><br />
+                Great work Yesterday!</div>
+            </li>
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/3.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Robert</b> - <small class="text-muted">3 hours ago</small><br />
+                Is the Titan Project still on?</div>
+            </li>
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/1.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Cynthia</b> - <small class="text-muted">14 hours ago</small><br />
+                Don't forget about the staff meeting tomorrow</div>
+            </li>
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/4.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Matt</b> - <small class="text-muted">2 days ago</small><br />
+                Thor Project cancelled, Sorry.</div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-footer"><a href="#">View All Messages <i class="fa fa-caret-right"></i> </a></li>
+      </ul>
+    </div>
+    <div class="alerts-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicons glyphicons-bell"></span> <b>3</b> </button>
+      <ul class="dropdown-menu checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Recent Alerts <span class="pull-right glyphicons glyphicons-bell"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-icon"><i style="color: #0066ad;" class="fa fa-facebook"></i> </div>
+              <div class="item-message"><a href="#">Facebook likes reached <b>8,200</b></a></div>
+            </li>
+            <li>
+              <div class="item-icon"><i style="color: #5cb85c;" class="fa fa-check"></i> </div>
+              <div class="item-message"><a href="#">Robert <b>completed task</b> - Client SEO Revamp</a></div>
+            </li>
+            <li>
+              <div class="item-icon"><i style="color: #f0ad4e" class="fa fa-user"></i> </div>
+              <div class="item-message"><a href="#"><b>Marko</b> logged 12 hours</a></div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-footer"><a href="#">View All Alerts <i class="fa fa-caret-right"></i> </a></li>
+      </ul>
+    </div>
+    <div class="tasks-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicons glyphicons-tag"></span> <b>7</b> </button>
+      <ul class="dropdown-menu dropdown-checklist checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Recent Tasks <span class="pull-right glyphicons glyphicons-tag"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-icon"><i class="fa fa-pencil"></i> </div>
+              <div class="item-message text-slash"><a>Try Clicking me!</a></div>
+              <div class="item-label"><span class="label label-danger">Urgent</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-phone"></i> </div>
+              <div class="item-message text-slash"><a>Contact Client and request Approval</a></div>
+              <div class="item-label"><span class="label label-info">Normal</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-flask"></i> </div>
+              <div class="item-message text-slash"><a>Find new Python Developer </a></div>
+              <div class="item-label"><span class="label label-success">Completed</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-facebook"></i> </div>
+              <div class="item-message text-slash"><a>Update Facebook Page with Halloween Pictures</a></div>
+              <div class="item-label"><span class="label label-primary">In Progress</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-group"></i> </div>
+              <div class="item-message text-slash"><a>Organize next Staff Meeting</a></div>
+              <div class="item-label"><span class="label label-success">Completed</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-plane"></i> </div>
+              <div class="item-message text-slash"><a>Interview new applicant</a></div>
+              <div class="item-label"><span class="label label-warning">Moderate</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-footer"><a href="#">View All Tasks <i class="fa fa-caret-right"></i> </a></li>
+      </ul>
+    </div>
+    <div class="btn-group user-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicons glyphicons-user"></span> <b>Holladay</b> </button>
+      <button type="button" class="btn btn-default btn-gradient btn-sm dropdown-toggle padding-none" data-toggle="dropdown"> <img src="img/avatars/header/header-login.png" alt="user avatar" width="28" height="28" /> </button>
+      <ul class="dropdown-menu checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Your Account <span class="pull-right glyphicons glyphicons-user"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-icon"><i class="fa fa-envelope-o"></i> </div>
+              <a class="item-message" href="messages.html">Messages</a> </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-calendar"></i> </div>
+              <a class="item-message" href="calendar.html">Calendar</a> </li>
+            <li class="border-bottom-none">
+              <div class="item-icon"><i class="fa fa-cog"></i> </div>
+              <a class="item-message" href="customizer.html">Settings</a> </li>
+            <li class="padding-none">
+              <div class="dropdown-lockout"><i class="fa fa-lock"></i> <a href="screen-lock.html">Screen Lock</a></div>
+              <div class="dropdown-signout"><i class="fa fa-sign-out"></i> <a href="login.html">Sign Out</a></div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- End: Header --> 
+<!-- Start: Main -->
+<div id="main">
+  <aside id="sidebar" class="">
+    <div id="sidebar-search">
+      <form role="search">
+        <input type="text" class="search-bar form-control" placeholder="Search">
+        <button type="submit" class="btn btn-default hidden"></button>
+      </form>
+      <div class="sidebar-toggle"> <span class="glyphicon glyphicon-resize-horizontal"></span> </div>
+    </div>
+    <div id="sidebar-menu">
+      <ul class="nav sidebar-nav">
+        <li> <a class="accordion-toggle" href="#sideEight"><span class="glyphicons glyphicons-show_lines"></span><span class="sidebar-title">Multi Level Nav</span><span class="caret"></span></a>
+          <ul id="sideEight" class="nav sub-nav">
+            <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+            <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+            <li><a class="accordion-toggle" href="#sideEight-sub"><span class="glyphicons glyphicons-show_lines"></span>2nd Level Nav<span class="caret"></span></a>
+              <ul id="sideEight-sub" class="nav sub-nav">
+                <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+                <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+                <li><a class="accordion-toggle" href="#sideEight-sub-2"><span class="glyphicons glyphicons-show_lines"></span>3rd Level Nav<span class="caret"></span></a>
+                  <ul id="sideEight-sub-2" class="nav sub-nav">
+                    <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+                    <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+                    <li><a class="accordion-toggle" href="#sideEight-sub-2"><span class="glyphicons glyphicons-show_lines"></span>4th Level Nav<span class="caret"></span></a>
+                      <ul id="sideEight-sub-2" class="nav sub-nav">
+                        <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+                        <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+                        <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li> <a href="dashboard.html"><span class="glyphicons glyphicons-star"></span><span class="sidebar-title">Dashboard</span></a> </li>
+        <li class="active"> <a class="accordion-toggle menu-open" href="#resources"><span class="glyphicons glyphicons-settings"></span><span class="sidebar-title">Resources</span><span class="caret"></span></a>
+          <ul id="resources" class="nav sub-nav">
+            <li class="active"><a href="customizer.html"><span class="glyphicons glyphicons-edit"></span> Theme Customizer</a></li>
+            <li><a href="skin-demo.html"><span class="glyphicons glyphicons-magic"></span> Demo Style Switcher </a></li>
+            <li><a href="documentation/index.html"><span class="glyphicons glyphicons-book"></span> Documentation </a></li>
+            <li><a href=""><span class="glyphicons glyphicons-leaf"></span> Example Item #1 </a></li>
+            <li><a href=""><span class="glyphicons glyphicons-leaf"></span> Example Item #2 </a></li>
+            <li><a href=""><span class="glyphicons glyphicons-leaf"></span> Example Item #3 </a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideOne"><span class="glyphicons glyphicons-adjust_alt"></span><span class="sidebar-title">UI Elements</span><span class="caret"></span></a>
+          <ul id="sideOne" class="nav sub-nav">
+            <li><a href="portlets.html"><span class="glyphicons glyphicons-sort"></span> Portlets</a></li>
+            <li><a href="buttons.html"><span class="glyphicons glyphicons-macbook"></span> Buttons</a></li>
+            <li><a href="typography.html"><span class="glyphicons glyphicons-font"></span> Typography</a></li>
+            <li><a href="elements.html"><span class="glyphicons glyphicons-paperclip"></span> Elements</a></li>
+            <li><a href="charts.html"><span class="glyphicons glyphicons-stats"></span> Charts</a></li>
+            <li><a href="tabs.html"><span class="glyphicons glyphicons-adjust"></span> Tabs</a></li>
+            <li><a href="grid.html"><span class="glyphicons glyphicons-show_big_thumbnails"></span> Grid</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideTwo"><span class="glyphicons glyphicons-vcard"></span><span class="sidebar-title">Form Elements</span><span class="caret"></span></a>
+          <ul id="sideTwo" class="nav sub-nav">
+            <li><a href="tables.html"><span class="glyphicons glyphicons-justify"></span> Tables</a></li>
+            <li><a href="datatables.html"><span class="glyphicons glyphicons-list"></span> DataTables</a></li>
+            <li><a href="pricing-tables.html"><span class="glyphicons glyphicons-usd"></span> Pricing Tables</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideThree"><span class="glyphicons glyphicons-table"></span><span class="sidebar-title">Tables</span><span class="caret"></span></a>
+          <ul id="sideThree" class="nav sub-nav">
+            <li><a href="forms.html"><span class="glyphicons glyphicons-link"></span> Form Elements</a></li>
+            <li><a href="validation.html"><span class="glyphicons glyphicons-ok"></span> Form Validation</a></li>
+            <li><a href="wizard.html"><span class="glyphicons glyphicons-magic"></span> Form Wizard</a></li>
+            <li><a href="editors.html"><span class="glyphicons glyphicons-pencil"></span> Editors</a></li>
+            <li><a href="editable.html"><span class="glyphicons glyphicons-edit"></span> Inline Editing</a></li>
+            <li><a href="xedit.html"><span class="glyphicons glyphicons-check"></span> X-editable</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideFour"><span class="glyphicons glyphicons-cargo"></span><span class="sidebar-title">File Managers</span><span class="caret"></span></a>
+          <ul id="sideFour" class="nav sub-nav">
+            <li><a href="treeview.html"><span class="glyphicons glyphicons-tree_conifer"></span> TreeView</a></li>
+            <li><a href="file-manager.html"><span class="glyphicons glyphicons-cloud"></span> File Manager</a></li>
+            <li><a href="upload-tools.html"><span class="glyphicons glyphicons-cloud-upload"></span> File Uploaders</a></li>
+            <li><a href="dynamic-gallery.html"><span class="glyphicons glyphicons-picture"></span> Dynamic Gallery</a></li>
+            <li><a href="image-tools.html"><span class="glyphicons glyphicons-camera"></span> Image Tools</a></li>
+            <li><a href="nestable.html"><span class="glyphicons glyphicons-sampler"></span> Nestable</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideFive"><span class="glyphicons glyphicons-magic"></span><span class="sidebar-title">Extras</span><span class="caret"></span></a>
+          <ul id="sideFive" class="nav sub-nav">
+            <li><a href="icons.html"><span class="glyphicons glyphicons-flash"></span> Icons</a></li>
+            <li><a href="animations.html"><span class="glyphicons glyphicons-fire"></span> Animations</a></li>
+            <li><a href="sliders.html"><span class="glyphicons glyphicons-retweet"></span> Sliders</a></li>
+            <li><a href="sketchpad.html"><span class="glyphicons glyphicons-vector_path_square"></span> Sketchpad</a></li>
+          </ul>
+        </li>
+          <li> <a class="accordion-toggle" href="#sideSix"><span class="glyphicons glyphicons-globe"></span><span class="sidebar-title">Maps</span><span class="caret"></span></a>
+           <ul id="sideSix" class="nav sub-nav">
+             <li><a href="maps.html"><span class="glyphicons glyphicons-global"></span> GMaps</a></li>
+             <li><a href="maps-vector.html"><span class="glyphicons glyphicons-vector_path_circle"></span> Vector Maps</a></li>
+           </ul>
+         </li>
+          <li> <a href="widgets.html"><span class="glyphicons glyphicons-restart"></span><span class="sidebar-title">Widgets</span></a> </li>
+        <li> <a class="accordion-toggle" href="#sideSeven"><span class="glyphicons glyphicons-book_open"></span><span class="sidebar-title">Pages</span><span class="caret"></span></a>
+          <ul id="sideSeven" class="nav sub-nav">
+            <li><a href="invoice-page.html"><span class="glyphicons glyphicons glyphicons-print"></span> Printable Invoice</a></li>
+            <li><a href="timeline.html"><span class="glyphicons glyphicons-film"></span> Timeline</a></li>
+            <li><a href="gallery.html"><span class="glyphicons glyphicons-picture"></span> Gallery</a></li>
+            <li><a href="calendar.html"><span class="glyphicons glyphicons-calendar"></span> Calendar</a></li>
+            <li><a href="messages.html"><span class="glyphicons glyphicons-envelope"></span> Messages</a></li>
+            <li><a href="profile.html"><span class="glyphicons glyphicons-user"></span> User Profile</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideEight"><span class="glyphicons glyphicons-warning_sign"></span><span class="sidebar-title">Utility Pages</span><span class="caret"></span></a>
+          <ul id="sideEight" class="nav sub-nav">
+            <li><a href="faq.html"><span class="glyphicons glyphicons-edit"></span> Faq Page</a></li>
+            <li><a href="login.html"><span class="glyphicons glyphicons-power"></span> Login Page</a></li>
+            <li><a href="screen-lock.html"><span class="glyphicons glyphicons-lock"></span> Screen Lock</a></li>
+            <li><a href="coming-soon.html"><span class="glyphicons glyphicons-road"></span> Coming Soon</a></li>
+            <li><a href="404-page.html"><span class="glyphicons glyphicons-circle_remove"></span> 404 Page</a></li>
+            <li><a href="500-page.html"><span class="glyphicons glyphicons-circle_exclamation_mark"></span> 500 Page</a></li>
+            <li><a href="blank.html"><span class="glyphicons glyphicons-unchecked"></span> Blank Page</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!-- End: Sidebar --> 
+  <!-- Start: Content -->
+  <section id="content">
+    <div id="topbar">
+      <ol class="breadcrumb">
+        <li><a href="dashboard.html"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Customizer</li>
+      </ol>
+    </div>
+    <div id="skin-menu" class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 center-column">
+          <div class="panel panel-visible">
+            <div class="panel-heading">
+              <div class="panel-title"> <i class="fa fa-ticket"></i> Stardom Theme Editor </div>
+              <div class="panel-btns pull-right margin-left">
+                <button type="button" data-toggle="modal" data-target="#skinModal" class="skin-modal-open btn btn-info btn-gradient margin-right-sm"> <span class="glyphicons glyphicons-cogwheel"></span> Save CSS </button>
+                <a href="customizer.html" class="btn btn-danger btn-gradient">Reset</a> </div>
+            </div>
+            <div class="panel-menu">
+              <a data-toggle="tab" href="#tab1" class="btn btn-default btn-gradient btn-states margin-left margin-right-sm active">Header</a>
+              <a data-toggle="tab" href="#tab2" class="btn btn-default btn-gradient btn-states margin-right-sm">SideMenu</a>
+              <a data-toggle="tab" href="#tab3" class="btn btn-default btn-gradient btn-states margin-right-sm">Breadcrumbs</a>
+              <a data-toggle="tab" href="#tab4" class="btn btn-default btn-gradient btn-states margin-right-sm">Portlets</a>
+              <a data-toggle="tab" href="#tab5" class="btn btn-default btn-gradient btn-states margin-right-sm">Body</a>
+            </div>
+            <div class="panel-body">
+              <div class="tab-content padding-left-lg border-none">
+                <div id="tab1" class="tab-pane active">
+                  <div class="panel-group accordion accordion-alt" id="accordion1">
+                    <div class="panel panel-visible">
+                      <div class="panel-heading"> <a class="accordion-toggle-icon" data-toggle="collapse" data-parent="#accordion1" href="#header1">
+                        <div class="accordion-toggle-icon"> <i class="fa fa-minus-square-o"></i> <i class="fa fa-plus-square-o"></i> </div>
+                        Modify <b>Header <span class="text-primary">Color</span></b> </a> </div>
+                      <div id="header1" class="panel-collapse in">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label class="checkbox-inline">
+                                  <input class="checkbox" type="checkbox" data-modify='{"selector":".skin-set-1", "style": "gradient"}'>
+                                  Switch to <b>Gradient</b> </label>
+                                <label class="checkbox-inline">
+                                  <input class="checkbox" type="checkbox" data-modify='{"selector":".navbar", "style": 1}'>
+                                  Remove <b>Box-Shadow</b> (recommended) </label>
+                                <button type="button" class=" hidden btn btn-default btn-gradient margin-left btn-sm" data-modify='{"selector":".navbar", "style": "border-bottom-color", "popover": "border"}' data-toggle="popover"> Border Color</button>
+                              </div>
+                              <hr class="short alt" />
+                              <div class="skin-items skin-set-1" data-modify='{"selector":".navbar", "style": "background-color"}'>
+                                <div class="btn-blue"></div>
+                                <div class="btn-blue2"></div>
+                                <div class="btn-blue3"></div>
+                                <div class="btn-blue4"></div>
+                                <div class="btn-blue5"></div>
+                                <div class="btn-blue6"></div>
+                                <div class="btn-blue7"></div>
+                                <div class="btn-green"></div>
+                                <div class="btn-green2"></div>
+                                <div class="btn-green3"></div>
+                                <div class="btn-green4"></div>
+                                <div class="btn-green5"></div>
+                                <div class="btn-purple"></div>
+                                <div class="btn-purple2"></div>
+                                <div class="btn-purple3"></div>
+                                <div class="btn-purple3"></div>
+                                <div class="btn-red"></div>
+                                <div class="btn-red2"></div>
+                                <div class="btn-red3"></div>
+                                <div class="btn-red4"></div>
+                                <div class="btn-orange"></div>
+                                <div class="btn-orange2"></div>
+                                <div class="btn-yellow"></div>
+                                <div class="btn-yellow2"></div>
+                                <div class="btn-creme"></div>
+                                <div class="btn-creme2"></div>
+                                <div class="btn-brown"></div>
+                                <div class="btn-brown2"></div>
+                                <div class="btn-brown3"></div>
+                                <div class="btn-dark5"></div>
+                                <div class="btn-dark4"></div>
+                                <div class="btn-dark3"></div>
+                                <div class="btn-dark2"></div>
+                                <div class="btn-dark"></div>
+                                <div class="btn-light7"></div>
+                                <div class="btn-light6"></div>
+                                <div class="btn-light5"></div>
+                                <div class="btn-light4"></div>
+                                <div class="btn-light3"></div>
+                                <div class="btn-light2"></div>
+                                <div class="btn-light"></div>
+                              </div>
+                              <hr class="short alt" />
+                              <h6> Header Button Options</h6>
+                              <div class="form-group">
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".header-btns button.btn", "style": "background-color", "popover": "gradient"}' data-toggle="popover"> <i class="fa fa-check-square-o"></i> Button Color </button>
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".header-btns button.btn", "style": "border-color", "popover": "border"}' data-toggle="popover"> <i class="fa fa-arrows-h"></i> Border Color </button>
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".header-btns button.btn", "style": "color", "popover": "text-shadow"}' data-toggle="popover"> <i class="fa fa-font"></i> Text Color </button>
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".header-btns button.btn span", "style": "color"}' data-toggle="popover"> <i class="fa fa-rocket"></i> Icon Color </button>
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".header-btns button.btn:hover", "style": "color"}' data-toggle="popover" data-help-text="Change will only be visible in CSS"> <i class="fa fa-hand-o-up"></i> Hover </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab2" class="tab-pane">
+                  <div class="panel-group accordion accordion-alt" id="accordion2">
+                    <div class="panel panel-visible">
+                      <div class="panel-heading"> <a class="accordion-toggle-icon" data-toggle="collapse" data-parent="#accordion2" href="#sidemenu1">
+                        <div class="accordion-toggle-icon"> <i class="fa fa-minus-square-o"></i> <i class="fa fa-plus-square-o"></i> </div>
+                        Modify <b>SideMenu <span class="text-primary">Styles</span></b> </a> </div>
+                      <div id="sidemenu1" class="panel-collapse in">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label class="radio-inline margin-bottom">
+                                  <input class="radio" type="radio" name="optionsRadios" data-modify='{"selector":"#sidebar", "style": "sidebar-default"}' checked="">
+                                  Style 1 - <b>Gradient</b> </label>
+                                <label class="radio-inline margin-bottom">
+                                  <input class="radio" type="radio" name="optionsRadios" data-modify='{"selector":"#sidebar", "style": "sidebar-alt-white"}'>
+                                  Style 2 - <b>Flat White</b> </label>
+                                <label class="radio-inline margin-bottom">
+                                  <input class="radio" type="radio" name="optionsRadios" data-modify='{"selector":"#sidebar", "style": "sidebar-alt-grey"}'>
+                                  Style 3 - <b>Flat Grey</b> </label>
+                              </div>
+                              <hr class="short alt" />
+                              <ul class="nav well-tabs well-tabs-inverse margin-bottom-lg">
+                                <li class="active"><a href="#search-form" data-toggle="tab">Search Bar</a></li>
+                                <li><a href="#search-button" data-toggle="tab">Toggle Button</a></li>
+                              </ul>
+                              <div class="tab-content border-none padding-none">
+                                <div class="tab-pane active" id="search-form">
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"#sidebar-search", "style": "background-color", "popover": "gradient"}' data-toggle="popover"> <i class="fa fa-check-square-o"></i> Background</button>
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"#sidebar-search form input.search-bar", "style": "background-color", "popover": "gradient"}' data-toggle="popover"> <i class="fa fa-check-square-o"></i> Form Background </button>
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"#sidebar-search form input.search-bar", "style": "border-color", "popover": "border"}' data-toggle="popover"> <i class="fa fa-arrows-h"></i> Form Border </button>
+                                  <br>
+                                  <br>
+                                  <p class="small"><b>Note:</b> Search Form Placeholder text still requires many psuedo classes and crossbrowser fixes. <br>
+                                    As a result it must be styled manually in Stardoms theme.css</p>
+                                </div>
+                                <div class="tab-pane" id="search-button">
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".sidebar-toggle", "style": "background-color", "popover": "gradient"}' data-toggle="popover"> <i class="fa fa-check-square-o"></i> Button Color </button>
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".sidebar-toggle", "style": "border-color", "popover": "border"}' data-toggle="popover"> <i class="fa fa-arrows-h"></i> Border Color </button>
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".sidebar-toggle", "style": "color"}' data-toggle="popover"> <i class="fa fa-font"></i> Icon Color </button>
+                                </div>
+                              </div>
+                              <hr class="short alt" />
+                              <ul class="nav well-tabs well-tabs-inverse margin-bottom-lg">
+                                <li class="active"><a href="#menu-icons" data-toggle="tab">Menu Icons</a></li>
+                                <li><a href="#menu-text" data-toggle="tab">Menu Text</a></li>
+                                <li><a href="#menu-caret" data-toggle="tab">Menu Caret</a></li>
+                              </ul>
+                              <div class="tab-content border-none padding-none">
+                                <div class="tab-pane active" id="menu-icons">
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"ul.sidebar-nav > li > a .glyphicons", "style": "color", "popover": "icon-border"}' data-toggle="popover"><i class="fa fa-rocket"></i> Icons</button>
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"ul.sidebar-nav ul.sub-nav li .glyphicons", "style": "color"}' data-toggle="popover"><i class="fa fa-rocket"></i> Sub-Icons</button>
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"ul.sidebar-nav li.active > a .glyphicons", "style": "color"}' data-toggle="popover"><i class="fa fa-rocket text-red"></i> Active Icons</button>
+                                </div>
+                                <div class="tab-pane" id="menu-caret">
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"ul.sidebar-nav > li > a span.caret", "style": "color"}' data-toggle="popover"><i class="fa fa-caret-right"></i> Caret</button>
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"ul.sidebar-nav > li.active > a span.caret", "style": "color"}' data-toggle="popover"><i class="fa fa-caret-right text-red"></i> Active Caret</button>
+                                </div>
+                                <div class="tab-pane" id="menu-text">
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"ul.sidebar-nav .sidebar-title", "style": "color"}' data-toggle="popover"><i class="fa fa-font"></i> Text</button>
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"ul.sidebar-nav ul.sub-nav li a", "style": "color"}' data-toggle="popover"><i class="fa fa-font"></i> Sub-Text</button>
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"ul.sidebar-nav > li.active .sidebar-title", "style": "color"}' data-toggle="popover"><i class="fa fa-font text-red"></i>ctive Text</button>
+                                  <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"ul.sidebar-nav ul.sub-nav > li.active a", "style": "color"}' data-toggle="popover"><i class="fa fa-font text-red"></i>ctive Sub-Text</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab3" class="tab-pane">
+                  <div class="panel-group accordion accordion-alt" id="accordion3">
+                    <div class="panel panel-visible">
+                      <div class="panel-heading"> <a class="accordion-toggle-icon" data-toggle="collapse" data-parent="#accordion3" href="#breadcrumb1">
+                        <div class="accordion-toggle-icon"> <i class="fa fa-minus-square-o"></i> <i class="fa fa-plus-square-o"></i> </div>
+                        Modify <b>Breadcrumbs <span class="text-primary">Options</span></b> </a> </div>
+                      <div id="breadcrumb1" class="panel-collapse in">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <h6> Font Size </h6>
+                              <div class="form-group row">
+                                <div class="col-md-6">
+                                  <select class="form-control" data-modify='{"selector":".breadcrumb", "style": "font-size"}'>
+                                    <option>11px</option>
+                                    <option>12px</option>
+                                    <option>13px</option>
+                                    <option selected>14px</option>
+                                    <option>16px</option>
+                                    <option>18px</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <h6> Font Weight </h6>
+                              <div class="form-group row">
+                                <div class="col-md-6">
+                                  <select class="form-control" data-modify='{"selector":".breadcrumb", "style": "font-weight"}'>
+                                    <option value="400" selected>Thin</option>
+                                    <option value="600">Normal</option>
+                                    <option value="800">Bold</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <hr class="alt short" />
+                              <h6 class="margin-bottom margin-top-lg"> Backgrounds </h6>
+                              <div class="form-group">
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"#topbar", "style": "background", "popover": "breadcrumb-patterns"}' data-toggle="popover"> <i class="fa fa-puzzle-piece"></i> Patterns </button>
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"#topbar", "style": "background-color", "popover": "breadcrumb-bg"}' data-toggle="popover"> <i class="fa fa-flask"></i> Colors </button>
+                              </div>
+                              <h6 class="margin-bottom margin-top-lg"> Colors </h6>
+                              <div class="form-group">
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".breadcrumb li", "style": "color"}' data-toggle="popover"> <i class="fa fa-font"></i> Text</button>
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".breadcrumb li a", "style": "color"}' data-toggle="popover"> <i class="fa fa-font"></i> Link Text </button>
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".breadcrumb li a i.fa", "style": "color"}' data-toggle="popover"> <i class="fa fa-home"></i> Icon Color </button>
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":"#topbar", "style": "border-bottom-color"}' data-toggle="popover"> <i class="fa fa-arrows-h"></i> Border Color </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab4" class="tab-pane">
+                  <div class="panel-group accordion accordion-alt" id="accordion4">
+                    <div class="panel panel-visible">
+                      <div class="panel-heading"> <a class="accordion-toggle-icon" data-toggle="collapse" data-parent="#accordion4" href="#portlet1">
+                        <div class="accordion-toggle-icon"> <i class="fa fa-minus-square-o"></i> <i class="fa fa-plus-square-o"></i> </div>
+                        Modify <b>Portlet <span class="text-primary">Header</span></b> </a> </div>
+                      <div id="portlet1" class="panel-collapse in">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group row">
+                                <div class="col-md-6">
+                                  <h6>Header Title Size </h6>
+                                  <select class="form-control" data-modify='{"selector":".panel-title", "style": "font-size"}'>
+                                    <option>12px</option>
+                                    <option>13px</option>
+                                    <option selected>14px</option>
+                                    <option>15px</option>
+                                    <option>16px</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <div class="col-md-6">
+                                  <h6> Header Icon Size </h6>
+                                  <select class="form-control" data-modify='{"selector":".panel-title .fa", "style": "font-size"}'>
+                                    <option>13px</option>
+                                    <option>15px</option>
+                                    <option selected>17px</option>
+                                    <option>20px</option>
+                                    <option>22px</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <h6 class="margin-top-lg"> Header Colors</h6>
+                              <button type="button" class="btn btn-default btn-gradient margin-right" data-modify='{"selector":".panel-heading", "style": "background-color", "popover": "gradient"}' data-toggle="popover"> <i class="fa fa-flask"></i> Background </button>
+                              <button type="button" class="btn btn-default btn-gradient margin-right" data-modify='{"selector":".panel-title .fa", "style": "color"}' data-toggle="popover"> <i class="fa fa-rocket"></i> Icon Color </button>
+                              <button type="button" class="btn btn-default btn-gradient margin-right" data-modify='{"selector":".panel-title", "style": "color", "popover": "text-shadow"}' data-toggle="popover"> <i class="fa fa-font"></i> Text Color </button>
+                              <hr class="alt" />
+                              <h6> Body Box-Shadow</h6>
+                              <div class="form-group">
+                                <label class="radio-inline margin-bottom">
+                                  <input class="radio" type="radio" name="optionsRadios3" data-modify='{"selector":".panel", "style": 6}' checked="">
+                                  Black </label>
+                                <label class="radio-inline margin-bottom">
+                                  <input class="radio" type="radio" name="optionsRadios3" data-modify='{"selector":".panel", "style": 7}'>
+                                  White </label>
+                                <label class="radio-inline margin-bottom">
+                                  <input class="radio" type="radio" name="optionsRadios3" data-modify='{"selector":".panel", "style": 1}'>
+                                  None </label>
+                              </div>
+                              <h6> Body Colors</h6>
+                              <div class="form-group">
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".panel", "style": "background-color", "popover": "gradient"}' data-toggle="popover"> <i class="fa fa-flask"></i> Background </button>
+                                <button type="button" class="btn btn-default btn-gradient margin-right-sm" data-modify='{"selector":".panel", "style": "border-color", "popover": "border"}' data-toggle="popover"> <i class="fa fa-arrows-h"></i> Border Color </button>
+                              </div>
+                              <div class="form-group" hidden>
+                                <h6> Header Box-Shadow</h6>
+                                <label class="radio-inline margin-bottom">
+                                  <input class="radio" type="radio" name="optionsRadios2" data-modify='{"selector":".panel-heading", "style": 6}'>
+                                  Black </label>
+                                <label class="radio-inline margin-bottom">
+                                  <input class="radio" type="radio" name="optionsRadios2" data-modify='{"selector":".panel-heading", "style": 7}' checked="">
+                                  White </label>
+                                <label class="radio-inline margin-bottom">
+                                  <input class="radio" type="radio" name="optionsRadios2" data-modify='{"selector":".panel-heading", "style": 1}'>
+                                  None </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="tab5" class="tab-pane">
+                  <div class="panel-group accordion accordion-alt" id="accordion5">
+                    <div class="panel panel-visible">
+                      <div class="panel-heading"> <a class="accordion-toggle-icon" data-toggle="collapse" data-parent="#accordion5" href="#body1">
+                        <div class="accordion-toggle-icon"> <i class="fa fa-minus-square-o"></i> <i class="fa fa-plus-square-o"></i> </div>
+                        Modify <b>Body <span class="text-primary">Background</span></b> </a> </div>
+                      <div id="body1" class="panel-collapse in">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="skin-items skin-set-2" data-modify='{"selector":"#content", "style": "background-color"}'>
+                                <div class="btn-blue"></div>
+                                <div class="btn-blue2"></div>
+                                <div class="btn-blue3"></div>
+                                <div class="btn-blue4"></div>
+                                <div class="btn-blue5"></div>
+                                <div class="btn-blue6"></div>
+                                <div class="btn-blue7"></div>
+                                <div class="btn-green"></div>
+                                <div class="btn-green2"></div>
+                                <div class="btn-green3"></div>
+                                <div class="btn-green4"></div>
+                                <div class="btn-green5"></div>
+                                <div class="btn-purple"></div>
+                                <div class="btn-purple2"></div>
+                                <div class="btn-purple3"></div>
+                                <div class="btn-purple3"></div>
+                                <div class="btn-red"></div>
+                                <div class="btn-red2"></div>
+                                <div class="btn-red3"></div>
+                                <div class="btn-red4"></div>
+                                <div class="btn-orange"></div>
+                                <div class="btn-orange2"></div>
+                                <div class="btn-yellow"></div>
+                                <div class="btn-yellow2"></div>
+                                <div class="btn-creme"></div>
+                                <div class="btn-creme2"></div>
+                                <div class="btn-brown"></div>
+                                <div class="btn-brown2"></div>
+                                <div class="btn-brown3"></div>
+                                <div class="btn-dark5"></div>
+                                <div class="btn-dark4"></div>
+                                <div class="btn-dark3"></div>
+                                <div class="btn-dark2"></div>
+                                <div class="btn-dark"></div>
+                                <div class="btn-light7"></div>
+                                <div class="btn-light6"></div>
+                                <div class="btn-light5"></div>
+                                <div class="btn-light4"></div>
+                                <div class="btn-light3"></div>
+                                <div class="btn-light2"></div>
+                                <div class="btn-light"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End: Content --> 
+</div>
+<!-- End: Main -->
+
+<div class="modal fade" id="skinModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form id="skinGenerate" action="./" method="post">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Your Custom CSS</h4>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-info"> To <b>implement</b> these changes copy and paste all of the styles below and place them in <b class="text-blue2">custom.css</b>. Stardom has created this stylesheet for you and placed it in the themes primary CSS directory. You can also <b class="text-orange2">download</b> these styles using the button below.</div>
+          <div class="well">
+            <textarea></textarea>
+          </div>
+        </div>
+        <div class="modal-footer"> <a href="#" class="btn btn-primary btn-gradient" id="copy"><i class="fa fa-rocket"></i> Select All</a><a href="#" class="btn btn-success btn-gradient" id="download"><i class="fa fa-download"></i> Download</a> </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Core Javascript - via CDN --> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> <!-- Plugins --> 
+<script type="text/javascript" src="vendor/plugins/chosen/chosen.jquery.min.js"></script> 
+<script type="text/javascript" src="vendor/plugins/colorpicker/bootstrap-colorpicker.js"></script> 
+<script type="text/javascript" src="vendor/plugins/generateFile/assets/js/jquery.generateFile.js"></script> 
+<script type="text/javascript" src="vendor/plugins/generateFile/assets/js/script.js"></script> 
+
+<!-- Theme Javascript -->
+<script type="text/javascript" src="js/uniform.min.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/customizer.js"></script> 
+<script type="text/javascript">
+jQuery(document).ready(function() {
+
+	// Init Theme Core 	  
+	Core.init();
+	Customizer.init();
+	
+	$('#copy').click(function(e) {
+		e.preventDefault();
+	   $('#skinGenerate textarea').select();
+	});
+
+});
+</script>
+</body>
+
+</html>

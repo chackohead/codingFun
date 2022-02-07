@@ -1,0 +1,1009 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<title>Stardom - A Responsive HTML5 Admin UI Template Theme</title>
+<meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme" />
+<meta name="description" content="Stardom - A Responsive HTML5 Admin UI Template Theme">
+<meta name="author" content="Holladay">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font CSS  -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+
+<!-- Core CSS  -->
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/glyphicons_pro/glyphicons.min.css">
+
+<!-- Plugin CSS -->
+<link rel="stylesheet" type="text/css" href="vendor/plugins/gritter/css/jquery.gritter.css">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/pages.css">
+<link rel="stylesheet" type="text/css" href="css/plugins.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+<!-- Boxed-Layout CSS -->
+<link rel="stylesheet" type="text/css" href="css/boxed.css">
+
+<!-- Demonstration CSS -->
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+
+<!-- Your Custom CSS -->
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="elements-page"> 
+
+<!-- Start: Header -->
+<header class="navbar navbar-fixed-top">
+  <div class="pull-left"> <a class="navbar-brand" href="dashboard.html">
+    <div class="navbar-logo"><img src="img/logos/logo-red.png" class="img-responsive" alt="logo"/></div>
+    </a> </div>
+  <div class="pull-right header-btns">
+    <div class="messages-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-comment"></span> <b>4</b> </button>
+      <ul class="dropdown-menu checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Recent Messages <span class="pull-right glyphicons glyphicons-comment"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/2.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Maggie</b> - <small class="text-muted">12 minutes ago</small><br />
+                Great work Yesterday!</div>
+            </li>
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/3.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Robert</b> - <small class="text-muted">3 hours ago</small><br />
+                Is the Titan Project still on?</div>
+            </li>
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/1.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Cynthia</b> - <small class="text-muted">14 hours ago</small><br />
+                Don't forget about the staff meeting tomorrow</div>
+            </li>
+            <li>
+              <div class="item-avatar"><img src="img/avatars/header/4.jpg" class="img-responsive" alt="avatar" /></div>
+              <div class="item-message"><b>Matt</b> - <small class="text-muted">2 days ago</small><br />
+                Thor Project cancelled, Sorry.</div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-footer"><a href="#">View All Messages <i class="fa fa-caret-right"></i> </a></li>
+      </ul>
+    </div>
+    <div class="alerts-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicons glyphicons-bell"></span> <b>3</b> </button>
+      <ul class="dropdown-menu checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Recent Alerts <span class="pull-right glyphicons glyphicons-bell"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-icon"><i style="color: #0066ad;" class="fa fa-facebook"></i> </div>
+              <div class="item-message"><a href="#">Facebook likes reached <b>8,200</b></a></div>
+            </li>
+            <li>
+              <div class="item-icon"><i style="color: #5cb85c;" class="fa fa-check"></i> </div>
+              <div class="item-message"><a href="#">Robert <b>completed task</b> - Client SEO Revamp</a></div>
+            </li>
+            <li>
+              <div class="item-icon"><i style="color: #f0ad4e" class="fa fa-user"></i> </div>
+              <div class="item-message"><a href="#"><b>Marko</b> logged 12 hours</a></div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-footer"><a href="#">View All Alerts <i class="fa fa-caret-right"></i> </a></li>
+      </ul>
+    </div>
+    <div class="tasks-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicons glyphicons-tag"></span> <b>7</b> </button>
+      <ul class="dropdown-menu dropdown-checklist checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Recent Tasks <span class="pull-right glyphicons glyphicons-tag"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-icon"><i class="fa fa-pencil"></i> </div>
+              <div class="item-message text-slash"><a>Try Clicking me!</a></div>
+              <div class="item-label"><span class="label label-danger">Urgent</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-phone"></i> </div>
+              <div class="item-message text-slash"><a>Contact Client and request Approval</a></div>
+              <div class="item-label"><span class="label label-info">Normal</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-flask"></i> </div>
+              <div class="item-message text-slash"><a>Find new Python Developer </a></div>
+              <div class="item-label"><span class="label label-success">Completed</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-facebook"></i> </div>
+              <div class="item-message text-slash"><a>Update Facebook Page with Halloween Pictures</a></div>
+              <div class="item-label"><span class="label label-primary">In Progress</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-group"></i> </div>
+              <div class="item-message text-slash"><a>Organize next Staff Meeting</a></div>
+              <div class="item-label"><span class="label label-success">Completed</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-plane"></i> </div>
+              <div class="item-message text-slash"><a>Interview new applicant</a></div>
+              <div class="item-label"><span class="label label-warning">Moderate</span></div>
+              <div class="item-checkbox">
+                <input class="checkbox row-checkbox" type="checkbox">
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown-footer"><a href="#">View All Tasks <i class="fa fa-caret-right"></i> </a></li>
+      </ul>
+    </div>
+    <div class="btn-group user-menu">
+      <button type="button" class="btn btn-sm dropdown-toggle" data-toggle="dropdown"> <span class="glyphicons glyphicons-user"></span> <b>Holladay</b> </button>
+      <button type="button" class="btn btn-default btn-gradient btn-sm dropdown-toggle padding-none" data-toggle="dropdown"> <img src="img/avatars/header/header-login.png" alt="user avatar" width="28" height="28" /> </button>
+      <ul class="dropdown-menu checkbox-persist" role="menu">
+        <li class="menu-arrow">
+          <div class="menu-arrow-up"></div>
+        </li>
+        <li class="dropdown-header">Your Account <span class="pull-right glyphicons glyphicons-user"></span></li>
+        <li>
+          <ul class="dropdown-items">
+            <li>
+              <div class="item-icon"><i class="fa fa-envelope-o"></i> </div>
+              <a class="item-message" href="messages.html">Messages</a> </li>
+            <li>
+              <div class="item-icon"><i class="fa fa-calendar"></i> </div>
+              <a class="item-message" href="calendar.html">Calendar</a> </li>
+            <li class="border-bottom-none">
+              <div class="item-icon"><i class="fa fa-cog"></i> </div>
+              <a class="item-message" href="customizer.html">Settings</a> </li>
+            <li class="padding-none">
+              <div class="dropdown-lockout"><i class="fa fa-lock"></i> <a href="screen-lock.html">Screen Lock</a></div>
+              <div class="dropdown-signout"><i class="fa fa-sign-out"></i> <a href="login.html">Sign Out</a></div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- End: Header --> 
+<!-- Start: Main -->
+<div id="main"> 
+  <!-- Start: Sidebar -->
+  <aside id="sidebar">
+    <div id="sidebar-search">
+      <form role="search">
+        <input type="text" class="search-bar form-control" placeholder="Search">
+        <i class="fa fa-search field-icon-right"></i>
+        <button type="submit" class="btn btn-default hidden"></button>
+      </form>
+      <div class="sidebar-toggle"> <span class="glyphicon glyphicon-resize-horizontal"></span> </div>
+    </div>
+    <div id="sidebar-menu">
+      <ul class="nav sidebar-nav">
+        <li> <a class="accordion-toggle" href="#sideEight"><span class="glyphicons glyphicons-show_lines"></span><span class="sidebar-title">Multi Level Nav</span><span class="caret"></span></a>
+          <ul id="sideEight" class="nav sub-nav">
+            <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+            <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+            <li><a class="accordion-toggle" href="#sideEight-sub"><span class="glyphicons glyphicons-show_lines"></span>2nd Level Nav<span class="caret"></span></a>
+              <ul id="sideEight-sub" class="nav sub-nav">
+                <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+                <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+                <li><a class="accordion-toggle" href="#sideEight-sub-2"><span class="glyphicons glyphicons-show_lines"></span>3rd Level Nav<span class="caret"></span></a>
+                  <ul id="sideEight-sub-2" class="nav sub-nav">
+                    <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+                    <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+                    <li><a class="accordion-toggle" href="#sideEight-sub-2"><span class="glyphicons glyphicons-show_lines"></span>4th Level Nav<span class="caret"></span></a>
+                      <ul id="sideEight-sub-2" class="nav sub-nav">
+                        <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #1</a></li>
+                        <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #2</a></li>
+                        <li><a href="#"><span class="glyphicons glyphicons-ok_2"></span> Item #3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li> <a href="dashboard.html"><span class="glyphicons glyphicons-star"></span><span class="sidebar-title">Dashboard</span></a> </li>
+        <li> <a class="accordion-toggle" href="#resources"><span class="glyphicons glyphicons-settings"></span><span class="sidebar-title">Resources</span><span class="caret"></span></a>
+          <ul id="resources" class="nav sub-nav">
+            <li><a href="customizer.html"><span class="glyphicons glyphicons-edit"></span> Theme Customizer</a></li>
+            <li><a href="skin-demo.html"><span class="glyphicons glyphicons-magic"></span> Demo Style Switcher </a></li>
+            <li><a href="documentation/index.html"><span class="glyphicons glyphicons-book"></span> Documentation </a></li>
+          </ul>
+        </li>
+        <li class="active"> <a class="accordion-toggle menu-open" href="#sideOne"><span class="glyphicons glyphicons-adjust_alt"></span><span class="sidebar-title">UI Elements</span><span class="caret"></span></a>
+          <ul id="sideOne" class="nav sub-nav">
+            <li><a href="portlets.html"><span class="glyphicons glyphicons-sort"></span> Portlets</a></li>
+            <li><a href="buttons.html"><span class="glyphicons glyphicons-macbook"></span> Buttons</a></li>
+            <li><a href="typography.html"><span class="glyphicons glyphicons-font"></span> Typography</a></li>
+            <li class="active"><a href="elements.html"><span class="glyphicons glyphicons-paperclip"></span> Elements</a></li>
+            <li><a href="charts.html"><span class="glyphicons glyphicons-stats"></span> Charts</a></li>
+            <li><a href="tabs.html"><span class="glyphicons glyphicons-adjust"></span> Tabs</a></li>
+            <li><a href="grid.html"><span class="glyphicons glyphicons-show_big_thumbnails"></span> Grid</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideTwo"><span class="glyphicons glyphicons-vcard"></span><span class="sidebar-title">Form Elements</span><span class="caret"></span></a>
+          <ul id="sideTwo" class="nav sub-nav">
+            <li><a href="forms.html"><span class="glyphicons glyphicons-link"></span> Form Elements</a></li>
+            <li><a href="validation.html"><span class="glyphicons glyphicons-ok"></span> Form Validation</a></li>
+            <li><a href="wizard.html"><span class="glyphicons glyphicons-magic"></span> Form Wizard</a></li>
+            <li><a href="editors.html"><span class="glyphicons glyphicons-pencil"></span> Editors</a></li>
+            <li><a href="editable.html"><span class="glyphicons glyphicons-edit"></span> Inline Editing</a></li>
+            <li><a href="xedit.html"><span class="glyphicons glyphicons-check"></span> X-editable</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideThree"><span class="glyphicons glyphicons-table"></span><span class="sidebar-title">Tables</span><span class="caret"></span></a>
+          <ul id="sideThree" class="nav sub-nav">
+            <li><a href="tables.html"><span class="glyphicons glyphicons-justify"></span> Tables</a></li>
+            <li><a href="datatables.html"><span class="glyphicons glyphicons-list"></span> DataTables</a></li>
+            <li><a href="pricing-tables.html"><span class="glyphicons glyphicons-usd"></span> Pricing Tables</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideFour"><span class="glyphicons glyphicons-cargo"></span><span class="sidebar-title">File Managers</span><span class="caret"></span></a>
+          <ul id="sideFour" class="nav sub-nav">
+            <li><a href="treeview.html"><span class="glyphicons glyphicons-tree_conifer"></span> TreeView</a></li>
+            <li><a href="file-manager.html"><span class="glyphicons glyphicons-cloud"></span> File Manager</a></li>
+            <li><a href="upload-tools.html"><span class="glyphicons glyphicons-cloud-upload"></span> File Uploaders</a></li>
+            <li><a href="dynamic-gallery.html"><span class="glyphicons glyphicons-picture"></span> Dynamic Gallery</a></li>
+            <li><a href="image-tools.html"><span class="glyphicons glyphicons-camera"></span> Image Tools</a></li>
+            <li><a href="nestable.html"><span class="glyphicons glyphicons-sampler"></span> Nestable</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideFive"><span class="glyphicons glyphicons-magic"></span><span class="sidebar-title">Extras</span><span class="caret"></span></a>
+          <ul id="sideFive" class="nav sub-nav">
+            <li><a href="icons.html"><span class="glyphicons glyphicons-flash"></span> Icons</a></li>
+            <li><a href="animations.html"><span class="glyphicons glyphicons-fire"></span> Animations</a></li>
+            <li><a href="sliders.html"><span class="glyphicons glyphicons-retweet"></span> Sliders</a></li>
+            <li><a href="sketchpad.html"><span class="glyphicons glyphicons-vector_path_square"></span> Sketchpad</a></li>
+          </ul>
+        </li>
+          <li> <a class="accordion-toggle" href="#sideSix"><span class="glyphicons glyphicons-globe"></span><span class="sidebar-title">Maps</span><span class="caret"></span></a>
+           <ul id="sideSix" class="nav sub-nav">
+             <li><a href="maps.html"><span class="glyphicons glyphicons-global"></span> GMaps</a></li>
+             <li><a href="maps-vector.html"><span class="glyphicons glyphicons-vector_path_circle"></span> Vector Maps</a></li>
+           </ul>
+         </li>
+          <li> <a href="widgets.html"><span class="glyphicons glyphicons-restart"></span><span class="sidebar-title">Widgets</span></a> </li>
+        <li> <a class="accordion-toggle" href="#sideSeven"><span class="glyphicons glyphicons-book_open"></span><span class="sidebar-title">Pages</span><span class="caret"></span></a>
+          <ul id="sideSeven" class="nav sub-nav">
+            <li><a href="invoice-page.html"><span class="glyphicons glyphicons glyphicons-print"></span> Printable Invoice</a></li>
+            <li><a href="timeline.html"><span class="glyphicons glyphicons-film"></span> Timeline</a></li>
+            <li><a href="gallery.html"><span class="glyphicons glyphicons-picture"></span> Gallery</a></li>
+            <li><a href="calendar.html"><span class="glyphicons glyphicons-calendar"></span> Calendar</a></li>
+            <li><a href="messages.html"><span class="glyphicons glyphicons-envelope"></span> Messages</a></li>
+            <li><a href="profile.html"><span class="glyphicons glyphicons-user"></span> User Profile</a></li>
+          </ul>
+        </li>
+        <li> <a class="accordion-toggle" href="#sideEight"><span class="glyphicons glyphicons-warning_sign"></span><span class="sidebar-title">Utility Pages</span><span class="caret"></span></a>
+          <ul id="sideEight" class="nav sub-nav">
+            <li><a href="faq.html"><span class="glyphicons glyphicons-edit"></span> Faq Page</a></li>
+            <li><a href="login.html"><span class="glyphicons glyphicons-power"></span> Login Page</a></li>
+            <li><a href="screen-lock.html"><span class="glyphicons glyphicons-lock"></span> Screen Lock</a></li>
+            <li><a href="coming-soon.html"><span class="glyphicons glyphicons-road"></span> Coming Soon</a></li>
+            <li><a href="404-page.html"><span class="glyphicons glyphicons-circle_remove"></span> 404 Page</a></li>
+            <li><a href="500-page.html"><span class="glyphicons glyphicons-circle_exclamation_mark"></span> 500 Page</a></li>
+            <li><a href="blank.html"><span class="glyphicons glyphicons-unchecked"></span> Blank Page</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!-- End: Sidebar --> 
+  <!-- Start: Content -->
+  <section id="content">
+    <div id="topbar">
+      <ol class="breadcrumb">
+        <li><a href="dashboard.html"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active">Elements</li>
+      </ol>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-heading">
+                  <div class="panel-title"> <span class="glyphicon glyphicon-info-sign"></span> Alerts </div>
+                  <ul class="nav panel-tabs">
+                    <li class="active"><a href="#tab1" data-toggle="tab">Default</a></li>
+                    <li><a href="#tab2" data-toggle="tab">Links</a></li>
+                    <li><a href="#tab3" data-toggle="tab">Sizes</a></li>
+                  </ul>
+                </div>
+                <div class="panel-body alerts-panel">
+                  <div class="tab-content border-none padding-none">
+                    <div id="tab1" class="tab-pane active">
+                      <div class="alert alert-success alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Well done!</strong> You successfully read this important alert message. </div>
+                      <div class="alert alert-info alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Well done!</strong> You successfully read this important alert message. </div>
+                      <div class="alert alert-warning alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Well done!</strong> You successfully read this important alert message. </div>
+                      <div class="alert alert-danger alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Well done!</strong> You successfully read this important alert message. </div>
+                    </div>
+                    <div id="tab2" class="tab-pane">
+                      <div class="alert alert-success alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>. </div>
+                      <div class="alert alert-info alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important. </div>
+                      <div class="alert alert-warning alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Warning!</strong> Best check yo self, you're <a href="#" class="alert-link">not looking too good</a>. </div>
+                      <div class="alert alert-danger alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <strong>Oh snap!</strong> You need to <a href="#" class="alert-link">Change a few things up</a> and tryagain. </div>
+                    </div>
+                    <div id="tab3" class="tab-pane">
+                      <div class="alert alert-sm alert-info alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        Look i'm in a <strong>Small</strong> Alert Box! <code>&lt;alert-sm&gt;</code> </div>
+                      <div class="alert alert-info alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        Look i'm in a <strong>Regular</strong> Alert Box! <code>&lt;alert&gt;</code> </div>
+                      <div class="alert alert-lg alert-info alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        Look i'm in a <strong>Large</strong> Alert Box! <code>&lt;alert-lg&gt;</code> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-heading">
+                  <div class="panel-title"> <span class="glyphicon glyphicon-bell"></span> Gritter Notifications </div>
+                </div>
+                <div class="panel-body"> <a href="#" class="btn btn-alert btn-gradient margin-bottom margin-right-sm" id="add-regular">Regular</a> <a href="#" class="btn btn-primary btn-gradient margin-bottom margin-right-sm" id="add-sticky">Sticky</a> <a href="#" class="btn btn-alert btn-gradient margin-bottom margin-right-sm" id="add-without-image">Without image</a> <a href="#" class="btn btn-primary btn-gradient margin-bottom margin-right-sm" id="add-gritter-light">White Style</a> <a href="#" class="btn btn-alert btn-gradient margin-bottom margin-right-sm" id="add-with-callbacks">Callbacks</a> <a href="#" class="btn btn-primary btn-gradient margin-bottom margin-right-sm" id="add-sticky-with-callbacks">Sticky + Callbacks</a> <a href="#" class="btn btn-alert btn-gradient margin-bottom margin-right-sm" id="add-max">Max Messages</a> <a href="#" class="btn btn-primary btn-gradient margin-bottom margin-right-sm" id="remove-all">Remove All</a> <a href="#" class="btn btn-alert btn-gradient margin-bottom margin-right-sm" id="remove-all-with-callbacks">Remove All + Callbacks</a> </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="panel panel-visible">
+                <div class="panel-heading">
+                  <div class="panel-title"> <span class="glyphicon glyphicon-collapse-up"></span> Popup Tools </div>
+                </div>
+                <div class="panel-body">
+                  <h4 class="panel-body-title">Modals</h4>
+                  <button class="btn btn-primary btn-gradient" data-toggle="modal" data-target="#defaultModal"> Default </button>
+                  <button class="btn btn-primary btn-gradient" data-toggle="modal" data-target="#alertModal"> Alert Modal </button>
+                  <button class="btn btn-primary btn-gradient" data-toggle="modal" data-target="#formModal"> Form Modal </button>
+                  <h4 class="panel-body-title">Tooltips</h4>
+                  <p class="tooltip-demo">
+                    <button type="button" class="btn btn-default btn-gradient" data-toggle="tooltip" data-placement="left" title="" data-original-title="Tooltip on left">Left</button>
+                    <button type="button" class="btn btn-default btn-gradient" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tooltip on top">Top</button>
+                    <button type="button" class="btn btn-default btn-gradient" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tooltip on bottom">Bottom</button>
+                    <button type="button" class="btn btn-default btn-gradient" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Right</button>
+                    <button type="button" class="btn btn-default btn-gradient" data-toggle="tooltip" title="Default Position">Default Tooltip</button>
+                  </p>
+                  <h4 class="panel-body-title">Popovers</h4>
+                  <p class="popover-demo">
+                    <button type="button" class="btn btn-danger btn-gradient" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus faucibus." title="&lt;i class='fa fa-warning padding-right-sm'&gt;&lt;/i&gt; Top Danger"> <i class="fa fa-hand-o-left"></i> Toggle left </button>
+                    <button type="button" class="btn btn-primary btn-gradient" data-container="body" data-toggle="popover" data-placement="top" data-content="Sagittis lacus um faucibus." title="&lt;i class='fa fa-bolt padding-right-sm'&gt;&lt;/i&gt; Top Danger"> <i class="fa fa-hand-o-up"></i> Toggle top </button>
+                    <button type="button" class="btn btn-success btn-gradient" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Laoreet rutrum faucibus." title="&lt;i class='fa fa-bolt padding-right-sm'&gt;&lt;/i&gt; Top Danger"> <i class="fa fa-hand-o-down"></i> Toggle bottom </button>
+                    <button type="button" class="btn btn-warning btn-gradient" data-container="body" data-toggle="popover" data-placement="right" data-content="Lacus vel augue rutrum faucibus." title="&lt;i class='fa fa-bolt padding-right-sm'&gt;&lt;/i&gt; Top Danger"> <i class="fa fa-hand-o-right"></i> Toggle right </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-heading">
+                  <div class="panel-title"> <span class="glyphicon glyphicon-ok-circle"></span> Badges and Labels </div>
+                </div>
+                <div class="panel-body">
+                  <h4 class="panel-body-title">Badges</h4>
+                  <p> <span class="badge badge-inverse margin-right-sm">0</span> <span class="badge badge-default margin-right-sm">1</span> <span class="badge badge-primary margin-right-sm">4</span> <span class="badge badge-success margin-right-sm">8</span> <span class="badge badge-info margin-right-sm">12</span> <span class="badge badge-warning margin-right-sm">16</span> <span class="badge badge-danger margin-right-sm">20</span> <span><code>.badge .badge-sm .badge-lg</code></span> </p>
+                  <h4 class="panel-body-title">Labels</h4>
+                  <p> <span class="label label-inverse margin-right-sm">Inverse</span> <span class="label label-default margin-right-sm">Default</span> <span class="label label-primary margin-right-sm">Primary</span> <span class="label label-success margin-right-sm">Success</span> <span class="label label-info margin-right-sm">Info</span> <span class="label label-warning margin-right-sm">Warning</span> <span class="label label-danger margin-right-sm">Danger</span> <span><code>.label .label-sm .label-lg</code></span> </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-heading">
+                  <div class="panel-title"> <span class="glyphicon glyphicon-unchecked"></span> Wells </div>
+                </div>
+                <div class="panel-body text-center">
+                  <div class="well well-sm"> Look, I'm in a <b>Small</b> well! <code>&lt;well-sm&gt;</code> </div>
+                  <div class="well"> Look, I'm in a <b>Regular</b> well! <code>&lt;well&gt;</code> </div>
+                  <div class="well well-lg"> Look, I'm in a <b>Large</b> well! <code>&lt;well-lg&gt;</code> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-heading">
+                  <div class="panel-title"> <span class="glyphicon glyphicon-resize-full"></span> Progress Bars </div>
+                  <ul class="nav panel-tabs">
+                    <li class="active"><a href="#tab4" data-toggle="tab">Default</a></li>
+                    <li><a href="#tab5" data-toggle="tab">Custom</a></li>
+                    <li class="hidden-xs"><a href="#tab6" class="expanding-bars-btn" data-toggle="tab">Options</a></li>
+                  </ul>
+                </div>
+                <div class="panel-body alerts-panel">
+                  <div class="tab-content border-none padding-none">
+                    <div id="tab4" class="tab-pane active">
+                      <h4 class="panel-body-title">Default Progress Bars</h4>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> <span class="sr-only">60% Complete</span> </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete</span> </div>
+                      </div>
+                      <h4 class="panel-body-title">Striped Option</h4>
+                      <div class="progress progress-striped">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div>
+                      </div>
+                      <h4 class="panel-body-title">Animated Option</h4>
+                      <div class="progress progress-striped active">
+                        <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%"> <span class="sr-only">45% Complete</span> </div>
+                      </div>
+                      <h4 class="panel-body-title">Stacked Option</h4>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-success" style="width: 15%"> <span class="sr-only">35% Complete (success)</span> </div>
+                        <div class="progress-bar progress-bar-info" style="width: 15%"> <span class="sr-only">20% Complete (warning)</span> </div>
+                        <div class="progress-bar progress-bar-warning" style="width: 15%"> <span class="sr-only">10% Complete (danger)</span> </div>
+                        <div class="progress-bar progress-bar-danger" style="width: 15%"> <span class="sr-only">10% Complete (danger)</span> </div>
+                      </div>
+                    </div>
+                    <div id="tab5" class="tab-pane">
+                      <h4 class="panel-body-title">Custom Colors</h4>
+                      <div class="progress margin-bottom-lg">
+                        <div class="progress-bar progress-bar-dark" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> <span class="sr-only">60% Complete</span> </div>
+                      </div>
+                      <div class="progress margin-bottom-lg">
+                        <div class="progress-bar progress-bar-grey" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"> <span class="sr-only">60% Complete</span> </div>
+                      </div>
+                      <div class="progress margin-bottom-lg">
+                        <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div>
+                      </div>
+                      <div class="progress margin-bottom-lg">
+                        <div class="progress-bar progress-bar-teal" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div>
+                      </div>
+                      <div class="progress margin-bottom-lg">
+                        <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div>
+                      </div>
+                      <div class="progress margin-bottom-lg">
+                        <div class="progress-bar progress-bar-purple" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete</span> </div>
+                      </div>
+                      <div class="progress margin-bottom-lg">
+                        <div class="progress-bar progress-bar-pink" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"> <span class="sr-only">60% Complete</span> </div>
+                      </div>
+                      <div class="progress margin-bottom-lg">
+                        <div class="progress-bar progress-bar-ruby" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 30%"> <span class="sr-only">40% Complete (success)</span> </div>
+                      </div>
+                      <div class="progress margin-bottom-lg">
+                        <div class="progress-bar progress-bar-red" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">20% Complete</span> </div>
+                      </div>
+                      <div class="progress margin-bottom-lg">
+                        <div class="progress-bar progress-bar-orange" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div>
+                      </div>
+                      <div class="progress margin-bottom-lg">
+                        <div class="progress-bar progress-bar-yellow" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete</span> </div>
+                      </div>
+                    </div>
+                    <div id="tab6" class="tab-pane">
+                      <h4 class="panel-body-title">Sizes</h4>
+                      <div class="progress progress-sm">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 35%"> <span class="sr-only">35% Complete</span> </div>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 55%"> <span class="sr-only">55% Complete</span> </div>
+                      </div>
+                      <div class="progress progress-lg">
+                        <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 75%"> <span class="sr-only">75% Complete</span> </div>
+                      </div>
+                      <h4 class="panel-body-title">Expanding</h4>
+                      <div class="expanding-bars-pane">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">35% Complete</span> </div>
+                        </div>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-orange" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">55% Complete</span> </div>
+                        </div>
+                        <div class="progress progress-lg">
+                          <div class="progress-bar progress-bar-purple" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">75% Complete</span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-heading">
+                  <div class="panel-title"> <span class="glyphicon glyphicon-tasks"></span> Paginations </div>
+                  <div class="panel-btns pull-right"> <span class="panel-title-sm padding-right">Toggle Sizes:</span>
+                    <div class="btn-group toggle-pager-style">
+                      <button type="button" class="btn btn-sm btn-default pager-style-option" data-opt="sm" data-size="Small">1</button>
+                      <button type="button" class="btn btn-sm btn-default pager-style-option active" data-opt="default" data-size="Default">2</button>
+                      <button type="button" class="btn btn-sm btn-default pager-style-option" data-opt="lg" data-size="Large">3</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div id="pager-examples">
+                    <h4 class="panel-body-title" id="pager-title">Pagers</h4>
+                    <ul class="pager margin-right inline-object" style="text-align:left;">
+                      <li><a href="#">Previous</a></li>
+                      <li><a href="#">Next</a></li>
+                    </ul>
+                    <ul class="pager margin-right inline-object" style="text-align:left;">
+                      <li><a href="#"><i class="fa fa-caret-left"></i> </a></li>
+                      <li><a href="#"><i class="fa fa-caret-right"></i> </a></li>
+                    </ul>
+                    <ul class="pager margin-right inline-object" style="text-align:left;">
+                      <li><a href="#"><i class="fa fa-chevron-left"></i> </a></li>
+                      <li><a href="#"><i class="fa fa-chevron-right"></i> </a></li>
+                    </ul>
+                    <ul class="pager margin-bottom inline-object" style="text-align:left;">
+                      <li><a href="#"><i class="fa fa-arrow-left"></i> </a></li>
+                      <li><a href="#"><i class="fa fa-arrow-right"></i> </a></li>
+                    </ul>
+                  </div>
+                  <div id="pagination-examples">
+                    <h4 class="panel-body-title" id="pagination-title">Paginations</h4>
+                    <div>
+                      <ul class="pagination margin-bottom">
+                        <li><a href="#"><i class="fa fa-caret-left"></i> </a></li>
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> </a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="pagination pagination-rounded margin-bottom">
+                        <li><a href="#"><i class="fa fa-angle-left"></i> </a></li>
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> </a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="pagination pagination-alt margin-bottom">
+                        <li><a href="#"><i class="fa fa-caret-left"></i> </a></li>
+                        <li><a href="#">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#"><i class="fa fa-caret-right"></i> </a></li>
+                      </ul>
+                    </div>
+                    <h4 class="panel-body-title" id="paginator-title">Dynamic Pagination</h4>
+                    <div id="paginator-content" class="alert alert-info"></div>
+                    <ul id="paginator-example">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="panel">
+                <div class="panel-heading">
+                  <div class="panel-title"> <span class="glyphicon glyphicon-retweet"></span> Responsive Images </div>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-3"> <a href="#" class="thumbnail"> <img data-src="holder.js/100%x120/auto/textmode:exact" alt="holder-img"> </a> </div>
+                    <div class="col-xs-6 col-sm-3"> <a href="#" class="thumbnail"> <img data-src="holder.js/100%x120/auto/textmode:exact" alt="holder-img"> </a> </div>
+                    <div class="hidden-xs col-sm-6"> <a href="#" class="thumbnail"> <img data-src="holder.js/100%x120/auto/textmode:exact" alt="holder-img"> </a> </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4"> <a href="#" class="thumbnail"> <img data-src="holder.js/100%x120/auto/textmode:exact" alt="holder-img"> </a> </div>
+                    <div class="col-xs-6 col-sm-4"> <a href="#" class="thumbnail"> <img data-src="holder.js/100%x120/auto/textmode:exact" alt="holder-img"> </a> </div>
+                    <div class="hidden-xs col-sm-4"> <a href="#" class="thumbnail"> <img data-src="holder.js/100%x120/auto/textmode:exact" alt="holder-img"> </a> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End: Content --> 
+</div>
+<!-- End: Main -->
+
+<div class="modal fade" id="defaultModal" tabindex="-1" role="dialog"  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Example Modal</h4>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-info alert-dismissable">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+          <strong>Well done!</strong> You successfully read this important alert message. </div>
+        <p class="margin-bottom-lg"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+        <textarea class="form-control" rows="3"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="alertModal" tabindex="-1" role="dialog"  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title text-center">Are you sure that's what you want?</h4>
+      </div>
+      <div class="modal-body">
+        <p class="margin-bottom-lg"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+        <div class="form-group text-center">
+          <button type="button" class="btn btn-success btn-gradient margin-right-sm" data-dismiss="modal"><i class="fa fa-check"></i> Of course I am</button>
+          <button type="button" class="btn btn-danger btn-gradient" data-dismiss="modal"><i class="fa fa-warning"></i> No nevermind</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="formModal" tabindex="-1" role="dialog"  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title"><i class="fa fa-lock"></i> Login</h4>
+      </div>
+      <div class="modal-body">
+        <form class="cmxform" id="altForm" method="get">
+          <div id="login-avatar"> <img src="img/avatars/login.png" width="150" height="112" alt="avatar"> </div>
+          <div class="form-group">
+            <div class="input-group"> <span class="input-group-addon"><i class="fa fa-user"></i> </span>
+              <input type="text" class="form-control phone" maxlength="10" autocomplete="off" placeholder="User Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group"> <span class="input-group-addon"><i class="fa fa-key"></i> </span>
+              <input type="text" class="form-control product" maxlength="10" autocomplete="off" placeholder="Password">
+            </div>
+          </div>
+          <div class="alert alert-warning login-alert">Please read our <b>Terms of Use</b> before logging in.</div>
+        </form>
+      </div>
+      <div class="modal-footer"> <span class="panel-title-sm pull-left" style="padding-top: 7px;"><a> Forgotten Password?</a></span>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Core Javascript - via CDN --> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script> <!-- Plugins --> 
+<script type="text/javascript" src="vendor/bootstrap/holder.js"></script> 
+<script type="text/javascript" src="vendor/plugins/gritter/js/jquery.gritter.min.js"></script> 
+<script type="text/javascript" src="vendor/bootstrap/paginator/src/bootstrap-paginator.js"></script> 
+
+<!-- Theme Javascript --> 
+<script type="text/javascript" src="js/uniform.min.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/custom.js"></script> 
+<script type="text/javascript">
+ jQuery(document).ready(function() {
+
+	// Init Theme Core
+	Core.init();
+	 
+	 	//expanding progress bars
+	$('.expanding-bars-btn').click(function () {
+		 $('.expanding-bars-pane .progress-bar').each(function (i,element) {
+				var This = $(this);
+				var pbarDelay = window.setTimeout( function(){
+					var pbarWidth = i + 1;
+		   		   $(This).animate({width: (pbarWidth * 25) + '%' });
+		 	    },500);  
+		 });
+	});
+
+	//pager and pagination toggle sizes
+	var pagerOptions = [];
+	var pagerToggle = $(".toggle-pager-style .pager-style-option");
+	var pagerCount = $(pagerToggle).length;	
+	
+	
+	$(pagerToggle).each(function (index, element){
+		var optionVal = $(element).data('opt');
+		
+		// gather options and push to array
+		pagerOptions.push(optionVal);
+		
+		// on last loop filter for uniqueness
+		if (index == pagerCount - 1) {
+		 	jQuery.unique(pagerOptions);
+		}
+
+	});
+	
+	$(pagerToggle).click(function () {
+		var pagerStyle = $(this).data('opt');
+		var pagerSize = $(this).data('size');
+		var Options = pagerOptions.join(" ");	
+			
+		$('#pager-examples').find("ul").removeClass('pager-sm pager-lg').addClass('pager-' + pagerStyle); 
+		$('#pagination-examples').find("ul").removeClass('pagination-sm pagination-lg').addClass('pagination-' + pagerStyle); 
+		$('#pager-title').text('Pagers - ' + pagerSize); 
+		$('#pagination-title').text('Paginations - ' + pagerSize); 
+		$('#paginator-title').text('Dynamic Pagination - ' + pagerSize); 
+		// remove active class from options and add
+		// the class to the newly clicked option
+		$(this).siblings().removeClass("active");
+		$(this).addClass("active");
+		
+	});
+	 
+// paginator options
+	var options = {
+		currentPage: 3,
+		totalPages: 10,
+		shouldShowPage:function(type, page, current){
+			switch(type)
+			{
+				case "first":
+				case "last":
+					return false;
+				default:
+					return true;
+			}
+		},
+		onPageChanged: function(e,oldPage,newPage){
+			$('#paginator-content').text("Current page changed, old: "+oldPage+" new: "+newPage);
+		}
+	}
+	// init paginator
+	$('#paginator-example').bootstrapPaginator(options);
+		
+	// init tooltip
+	$('.tooltip-demo').tooltip({
+      selector: "[data-toggle=tooltip]",
+      container: "body"
+    })
+	
+	// init popover
+    $("[data-toggle=popover]").popover({html:true})
+	 
+	// popover auto close timer  
+	$('.popover-demo button').on('show.bs.popover', function () {
+	   var This = $(this);
+  
+	   var animate = window.setTimeout( function(){
+		    $(This).popover('hide')
+		  },3500);
+	 }); 
+	 
+		$('#add-sticky').click(function(){
+			var unique_id = $.gritter.add({
+				// (string | mandatory) the heading of the notification
+				title: 'This is a sticky notice!',
+				// (string | mandatory) the text inside the notification
+				text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+				// (string | optional) the image to display on the left
+				image: 'http://s3.amazonaws.com/twitter_production/profile_images/132499022/myface_bigger.jpg',
+				// (bool | optional) if you want it to fade out on its own or just sit there
+				sticky: true,
+				// (int | optional) the time you want it to be alive for before fading out
+				time: '',
+				// (string | optional) the class name you want to apply to that specific message
+				class_name: 'my-sticky-class'
+			});
+			return false;
+
+		});
+
+		$('#add-regular').click(function(){
+			$.gritter.add({
+				// (string | mandatory) the heading of the notification
+				title: 'This is a regular notice!',
+				// (string | mandatory) the text inside the notification
+				text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+				// (string | optional) the image to display on the left
+				image: 'http://a0.twimg.com/profile_images/59268975/jquery_avatar_bigger.png',
+				// (bool | optional) if you want it to fade out on its own or just sit there
+				sticky: false,
+				// (int | optional) the time you want it to be alive for before fading out
+				time: ''
+			});
+			return false;
+		});
+
+        $('#add-max').click(function(){
+            $.gritter.add({
+                // (string | mandatory) the heading of the notification
+                title: 'This is a notice with a max of 3 on screen at one time!',
+                // (string | mandatory) the text inside the notification
+                text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+                // (string | optional) the image to display on the left
+                image: 'http://a0.twimg.com/profile_images/59268975/jquery_avatar_bigger.png',
+                // (bool | optional) if you want it to fade out on its own or just sit there
+                sticky: false,
+                // (function) before the gritter notice is opened
+                before_open: function(){
+                    if($('.gritter-item-wrapper').length == 3)
+                    {
+                        // Returning false prevents a new gritter from opening
+                        return false;
+                    }
+                }
+            });
+            return false;
+        });
+
+		$('#add-without-image').click(function(){
+			$.gritter.add({
+				// (string | mandatory) the heading of the notification
+				title: 'This is a notice without an image!',
+				// (string | mandatory) the text inside the notification
+				text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.'
+			});
+			return false;
+		});
+
+        $('#add-gritter-light').click(function(){
+            $.gritter.add({
+                // (string | mandatory) the heading of the notification
+                title: 'This is a light notification',
+                // (string | mandatory) the text inside the notification
+                text: 'Just add a "gritter-light" class_name to your $.gritter.add or globally to $.gritter.options.class_name',
+                class_name: 'gritter-light'
+            });
+            return false;
+        });
+
+		$('#add-with-callbacks').click(function(){
+			$.gritter.add({
+				// (string | mandatory) the heading of the notification
+				title: 'This is a notice with callbacks!',
+				// (string | mandatory) the text inside the notification
+				text: 'The callback is...',
+				// (function | optional) function called before it opens
+				before_open: function(){
+					alert('I am called before it opens');
+				},
+				// (function | optional) function called after it opens
+				after_open: function(e){
+					alert("I am called after it opens: \nI am passed the jQuery object for the created Gritter element...\n" + e);
+				},
+				// (function | optional) function called before it closes
+				before_close: function(e, manual_close){
+                    var manually = (manual_close) ? 'The "X" was clicked to close me!' : '';
+					alert("I am called before it closes: I am passed the jQuery object for the Gritter element... \n" + manually);
+				},
+				// (function | optional) function called after it closes
+				after_close: function(e, manual_close){
+                    var manually = (manual_close) ? 'The "X" was clicked to close me!' : '';
+					alert('I am called after it closes. ' + manually);
+				}
+			});
+			return false;
+		});
+
+		$('#add-sticky-with-callbacks').click(function(){
+			$.gritter.add({
+				// (string | mandatory) the heading of the notification
+				title: 'This is a sticky notice with callbacks!',
+				// (string | mandatory) the text inside the notification
+				text: 'Sticky sticky notice.. sticky sticky notice...',
+				// Stickeh!
+				sticky: true,
+				// (function | optional) function called before it opens
+				before_open: function(){
+					alert('I am a sticky called before it opens');
+				},
+				// (function | optional) function called after it opens
+				after_open: function(e){
+					alert("I am a sticky called after it opens: \nI am passed the jQuery object for the created Gritter element...\n" + e);
+				},
+				// (function | optional) function called before it closes
+				before_close: function(e){
+					alert("I am a sticky called before it closes: I am passed the jQuery object for the Gritter element... \n" + e);
+				},
+				// (function | optional) function called after it closes
+				after_close: function(){
+					alert('I am a sticky called after it closes');
+				}
+			});
+			return false;
+
+		});
+
+		$("#remove-all").click(function(){
+			$.gritter.removeAll();
+			return false;
+
+		});
+
+		$("#remove-all-with-callbacks").click(function(){
+			$.gritter.removeAll({
+				before_close: function(e){
+					alert("I am called before all notifications are closed.  I am passed the jQuery object containing all  of Gritter notifications.\n" + e);
+				},
+				after_close: function(){
+					alert('I am called after everything has been closed.');
+				}
+			});
+			return false;
+		});
+
+ });
+
+</script>
+</body>
+
+</html>
