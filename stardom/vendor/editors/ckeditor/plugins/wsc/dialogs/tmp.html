@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<title>Stardom - A Responsive HTML5 Admin UI Template Theme</title>
+<meta name="keywords" content="HTML5 Bootstrap 3 Admin Template UI Theme" />
+<meta name="description" content="Stardom - A Responsive HTML5 Admin UI Template Theme">
+<meta name="author" content="Holladay">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font CSS  -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+
+<!-- Core CSS  -->
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/glyphicons_pro/glyphicons.min.css">
+
+<!-- Plugin CSS -->
+<link rel="stylesheet" type="text/css" href="vendor/jqueryui/jquery-ui-1.10.3.custom.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="vendor/plugins/ladda/dist/ladda-themeless.min.css">
+<link rel="stylesheet" type="text/css" href="vendor/plugins/mfpopup/dist/magnific-popup.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="vendor/plugins/isotope/jquery.isotope.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="vendor/plugins/calendar/fullcalendar.css" media="screen">
+<link rel="stylesheet" type="text/css" href="vendor/plugins/gritter/css/jquery.gritter.css" />
+<link rel="stylesheet" type="text/css" href="vendor/editors/xeditable/css/bootstrap-editable.css" />
+<link rel="stylesheet" type="text/css" href="vendor/editors/ckeditor/skins/moono/editor.css" />
+<link rel="stylesheet" type="text/css" href="vendor/editors/summernote/summernote.css" />
+<link rel="stylesheet" type="text/css" href="vendor/plugins/prettify/prettify.css">
+<link rel="stylesheet" type="text/css" href="vendor/plugins/rangeslider/css/classic-min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="vendor/plugins/timepicker/bootstrap-timepicker.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/plugins/colorpicker/colorpicker.css">
+<link rel="stylesheet" type="text/css" href="vendor/plugins/datepicker/datepicker.css" />
+<link rel="stylesheet" type="text/css" href="vendor/plugins/daterange/daterangepicker.css" />
+<link rel="stylesheet" type="text/css" href="vendor/plugins/tags/tagmanager.css" />
+<link rel="stylesheet" type="text/css" href="vendor/plugins/formswitch/css/bootstrap-switch.css" />
+<link rel="stylesheet" type="text/css" href="vendor/plugins/chosen/chosen.min.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="vendor/plugins/ladda/dist/ladda-themeless.min.css">
+<link rel="stylesheet" type="text/css"  href="css/theme.css">
+<link rel="stylesheet" href="css/timeline.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/custom.css">
+<script src="vendor/modernizr.js"></script>
+
+<!--[if IE]>
+        <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+
+<!--[if lte IE 8]>
+        <script src="vendor/respond.js"></script>
+    <![endif]-->
+
+<!-- Facebook OpenGraph Tags - Go to http://developers.facebook.com/ for more information.
+    <meta property="og:title" content="Porto Website Template."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://www.crivos.com/themes/porto"/>
+    <meta property="og:image" content="http://www.crivos.com/themes/porto/"/>
+    <meta property="og:site_name" content="Porto"/>
+    <meta property="fb:app_id" content=""/>
+    <meta property="og:description" content="Porto - Responsive HTML5 Template"/>
+    -->
+</head>
+<body>
+<div id="content" class="main-box"></div>
+<iframe src="" frameborder="0" id="spelltext" name="spelltext" style="display:none; width: 100%" ></iframe>
+<iframe src="" frameborder="0" id="loadsuggestfirst" name="loadsuggestfirst" style="display:none; width: 100%" ></iframe>
+<iframe src="" frameborder="0" id="loadspellsuggestall" name="loadspellsuggestall" style="display:none; width: 100%" ></iframe>
+<iframe src="" frameborder="0" id="loadOptionsForm" name="loadOptionsForm" style="display:none; width: 100%" ></iframe>
+<script>
+		(function(window) {
+			// Constructor Manager PostMessage
+
+			var ManagerPostMessage = function() {
+				var _init = function(handler) {
+					if (document.addEventListener) {
+						window.addEventListener('message', handler, false);
+					} else {
+						window.attachEvent("onmessage", handler);
+					};
+				};
+				var _sendCmd = function(o) {
+					var str,
+						type = Object.prototype.toString,
+						fn = o.fn || null,
+						id = o.id || '',
+						target = o.target || window,
+						message = o.message || { 'id': id };
+
+					if (type.call(o.message) == "[object Object]") {
+						(o.message['id']) ? o.message['id'] : o.message['id'] = id;
+						message = o.message;
+					};
+
+					str = JSON.stringify(message, fn);
+					target.postMessage(str, '*');
+				};
+
+				return {
+					init: _init,
+					send: _sendCmd
+				};
+			};
+
+			var manageMessageTmp = new ManagerPostMessage;
+
+
+				var appString = (function(){
+					var spell = parent.CKEDITOR.config.wsc.DefaultParams.scriptPath;
+					var serverUrl = parent.CKEDITOR.config.wsc.DefaultParams.serviceHost;
+					return serverUrl + spell;
+				})();
+
+				function loadScript(src, callback) {
+				    var scriptTag = document.createElement("script");
+				   		scriptTag.type = "text/javascript";
+				   	callback ? callback : callback = function() {};
+				    if(scriptTag.readyState) {
+				        //IE
+				        scriptTag.onreadystatechange = function() {
+				            if (scriptTag.readyState == "loaded" ||
+				            scriptTag.readyState == "complete") {
+				                scriptTag.onreadystatechange = null;
+				                setTimeout(function(){scriptTag.parentNode.removeChild(scriptTag)},1)
+				                callback();
+				            }
+				        };
+				    }else{
+				        //Others
+				        scriptTag.onload = function() {
+				           setTimeout(function(){scriptTag.parentNode.removeChild(scriptTag)},1);
+				           callback();
+				        };
+				    };
+				    scriptTag.src = src;
+				    document.getElementsByTagName("head")[0].appendChild(scriptTag);
+				};
+
+
+				window.onload = function(){
+					 loadScript(appString, function(){
+						manageMessageTmp.send({
+							'id': 'iframeOnload',
+							'target': window.parent
+						});
+					});
+				}
+			})(this);
+		</script>
+</body>
+
+</html>
