@@ -1,0 +1,9 @@
+This theme has made slight adjustments to the typical Bootstrap 3 Grid structure. 
+The css breakpoints for "md" and "lg" columns have been altered (raised) to better 
+support site responsiveness at higher resolutions. Bootstrap is terrific when dealing with small 
+resolutions. However, Admin UI themes tend to take up as much fullwidth screen realestate as possible.
+Because of this more attention was given to providing a correct layout when dealing with resolutions 
+between 1200-1920px widths
+
+
+Also changed global body font from 14px to 13px

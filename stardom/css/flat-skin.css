@@ -1,0 +1,72 @@
+/* Author: Louis Holladay
+ * Website: AdminDesigns.com
+ * Last Updated: 02/01/14 
+ * Copyright 2014 Admin Designs
+=================================================
+ * This file is reserved for changes made by the
+ * user as it's often a good idea to seperate your
+ * work from  * the theme. It makes modifications,
+ * and future theme updates much easier. 
+================================================== */
+/* navbar */
+body.flat-skin .navbar {
+  box-shadow: none;
+  border-bottom: 1px solid #DDD; }
+
+/* globals */
+body.flat-skin .btn-gradient {
+  background-image: none;
+  border: 0;
+  text-shadow: none; }
+
+/* sidebar */
+body.flat-skin ul.sidebar-nav > li > a {
+  background-image: none;
+  background: #FFF;
+  border-color: #DDD; }
+
+body.flat-skin #sidebar-search {
+  background-image: none;
+  background: #FFF;
+  border-color: #DDD; }
+
+body.flat-skin .sidebar-toggle {
+  background-image: none;
+  background: #F9F9F9; }
+
+body.flat-skin ul.sidebar-nav > li > a .glyphicons {
+  border-right: 0;
+  margin-left: 10px; }
+
+/* content */
+body.flat-skin #content:after {
+  box-shadow: none;
+  border-left: 1px solid #CCC; }
+
+/* panels */
+body.flat-skin .panel {
+  box-shadow: none;
+  background-image: none;
+  border-color: #ccc; }
+
+body.flat-skin .panel .panel-heading {
+  box-shadow: none;
+  background: #f9f9f9;
+  border-color: #ccc; }
+
+/* topbar */
+body.flat-skin #topbar {
+  box-shadow: none;
+  background: #eee;
+  border-color: #d4d4d4; }
+
+/* Header Buttons */
+body.flat-skin .header-btns > div > button {
+  color: #FFF;
+  background: #d9534f;
+  background-image: none;
+  border: 0;
+  text-shadow: none; }
+
+body.flat-skin .header-btns > div > button:hover {
+  color: #eee; }
